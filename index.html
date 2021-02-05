@@ -158,11 +158,16 @@ function unhide(divID) {
   </p> -->
 
   <p>
-  I'm a Postdoctoral Researcher at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/'>Microsoft Research New England</a>, as part of the Machine Learning and Statstics group.
+  I'm a Postdoctoral Researcher at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/'>Microsoft Research New England</a>, within the Machine Learning and Statstics group.
+  My research seeks to make machine learning more <b>broadly applicable</b> (especially to data-poor applications) and <b>trustworthy</b> (and, particularly, robust and interpretable). I am particularly interested in the implications of these two directions for applications in the natural and medical sciences.
 
-  My current research sits at the intersection of machine learning, optimization and applied mathematics, with a focus on optimal transport distances and their application to dataset manipulation and analysis, transfer learning, and generative modeling. In terms of application domains, I am particularly interested in those with structured and scarce data.
   </p><p>
-  During my PhD I also worked on other aspects of learning with structured data, ranging from <a href="#WE-metric">learning representations</a> of structured objects, to <a href="#DRNN">generating them</a>, to <a href="#interpseq">interpreting models</a> that operate on them.
+  My approach to the first of these goals draws on ideas from statistics, optimization, and applied mathemtics, especially <a href="https://en.wikipedia.org/wiki/Transportation_theory_(mathematics)" target="_blank">optimal transport</a>, which I have used to develop methods to mitigate data scarcity by various types of geometric dataset manipulations: <a href="#InvarOT">alignment</a>, <a href="#OTDD">comparison</a>, <a href="#GWGAN">generation</a>, and <a href="#OTGF">transformation</a>.
+  <a href="https://www.microsoft.com/en-us/research/video/directions-in-ml-automating-dataset-comparison-and-manipulation-with-optimal-transport/">This talk</a> provides a high-level overview of this part of my work.
+  </p><p>
+  As for trustworthy machine learning, I have worked on methods for explaining predictions of <a href="#interpseq">black box models</a>, showed their <a href="#Robust-interpret">lack of robustness</a>, proposed methods to <a href="#SENN">robustify them</a>, and sought inspiration in the social sciences to make them <a href="WOE-HCML">human-centered</a>.
+  </p><p>
+  In the past, I worked on various aspects of learning with highly-structured data such as text or graphs, ranging from <a href="#WE-metric">learning representations</a> of structured objects, to <a href="#DRNN">generating them</a>, to <a href="#interpseq">interpreting models</a> that operate on them.
 
    <!-- to <a href="#SOT">computing distances</a> between them. The latter two aspects form the core themes of my PhD work:
   <UL style="margin:15px;padding:0px;"> -->
@@ -175,16 +180,17 @@ function unhide(divID) {
   	<li> Optimal transport distances in structured domains </li>
   	<li> Principled and robust interpretable machine learning (for structured data, and beyond) </li>
   </UL> -->
-  Other topics that I have worked on in the past are:
+  <!-- Other topics that I have worked on in the past are:
   <UL style="margin:15px;padding:0px;">
-  	<!-- <li> Perturbation-based approaches to interpretability in machine learning </li>
-  	<li> Optimal transport </li> -->
+  	<li> Perturbation-based approaches to interpretability in machine learning </li>
+  	<li> Optimal transport </li>
   	<li> Generative adversarial networks</li>
   	<li> [Un|semi]-supervised domain adaptation and machine translation.</li>
-  	<!-- <li> Tree and sequence embedding and generation. </li>
-  	<li> Semantic representations, their manifold structure and geometric properties.</li> -->
+  	<li> Tree and sequence embedding and generation. </li>
+  	<li> Semantic representations, their manifold structure and geometric properties.</li>
   	<li> Optimization: Semidefinite programming, MMW, convex optimization.</li>
   </UL>
+  -->
 
   </p>
 
@@ -774,6 +780,15 @@ function unhide(divID) {
 
                    <!-- paper has attrib filter -->
                 
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="javascript:unhide('talk_selected_OTDD');">talk</a>
+                    
+
                    <!-- paper has attrib filter -->
                 
                    <!-- paper has attrib filter -->
@@ -807,6 +822,20 @@ function unhide(divID) {
               </div>
 
               <!-- Additional hidden containers that should appear after buttons -->
+              
+                
+                  <!-- New: Slides Live Embedded Approach -->
+                  <div id="talk_selected_OTDD" class="hidden"></div>
+                  <script src='https://slideslive.com/embed_presentation.js'></script>
+                  <script>
+                      embed = new SlidesLiveEmbed("talk_selected_OTDD", {
+                          presentationId: 38930654,
+                          autoPlay: false, // change to true to autoplay the embedded presentation
+                          verticalEnabled: true
+                      });
+                  </script>
+                
+
               
               
                 <div id="press_selected_OTDD" class="hidden">
@@ -881,9 +910,19 @@ function unhide(divID) {
 
               <!-- Additional hidden containers that should appear after buttons -->
               
-                <div id="talk_selected_HyperOT" class="hidden">
-                  <iframe src="https://slideslive.com/38930095/" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </div>
+                
+                  <!-- New: Slides Live Embedded Approach -->
+                  <div id="talk_selected_HyperOT" class="hidden"></div>
+                  <script src='https://slideslive.com/embed_presentation.js'></script>
+                  <script>
+                      embed = new SlidesLiveEmbed("talk_selected_HyperOT", {
+                          presentationId: 38930095,
+                          autoPlay: false, // change to true to autoplay the embedded presentation
+                          verticalEnabled: true
+                      });
+                  </script>
+                
+
               
               
               
@@ -951,7 +990,7 @@ function unhide(divID) {
         
 
           
-            <span class="anchor" id=""></span>
+            <span class="anchor" id="PHDTHESIS"></span>
             <div class="paper">
               <p class="title"><b>Optimal Transport in Structured Domains: Algorithms and Applications</b></p>
               <p><b>David Alvarez-Melis</b> (advisor: Tommi S. Jaakkola)</p>
@@ -1428,9 +1467,13 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
               <!-- Additional hidden containers that should appear after buttons -->
               
-                <div id="talk_selected_GW-align" class="hidden">
-                  <iframe src="https://player.vimeo.com/video/305660461" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </div>
+                
+                  <!-- Prior to Feb 2021: Iframe Approach -->
+                  <div id="talk_selected_GW-align" class="hidden">
+                    <iframe src="https://player.vimeo.com/video/305660461" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+                  </div>
+                
+
               
               
                 <div id="press_selected_GW-align" class="hidden">
@@ -1972,6 +2015,15 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
                    <!-- paper has attrib filter -->
                 
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="javascript:unhide('talk_ml_OTDD');">talk</a>
+                    
+
                    <!-- paper has attrib filter -->
                 
                    <!-- paper has attrib filter -->
@@ -2005,6 +2057,20 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
               </div>
 
               <!-- Additional hidden containers that should appear after buttons -->
+              
+                
+                  <!-- New: Slides Live Embedded Approach -->
+                  <div id="talk_ml_OTDD" class="hidden"></div>
+                  <script src='https://slideslive.com/embed_presentation.js'></script>
+                  <script>
+                      embed = new SlidesLiveEmbed("talk_ml_OTDD", {
+                          presentationId: 38930654,
+                          autoPlay: false, // change to true to autoplay the embedded presentation
+                          verticalEnabled: true
+                      });
+                  </script>
+                
+
               
               
                 <div id="press_ml_OTDD" class="hidden">
@@ -2079,9 +2145,19 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
               <!-- Additional hidden containers that should appear after buttons -->
               
-                <div id="talk_ml_HyperOT" class="hidden">
-                  <iframe src="https://slideslive.com/38930095/" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </div>
+                
+                  <!-- New: Slides Live Embedded Approach -->
+                  <div id="talk_ml_HyperOT" class="hidden"></div>
+                  <script src='https://slideslive.com/embed_presentation.js'></script>
+                  <script>
+                      embed = new SlidesLiveEmbed("talk_ml_HyperOT", {
+                          presentationId: 38930095,
+                          autoPlay: false, // change to true to autoplay the embedded presentation
+                          verticalEnabled: true
+                      });
+                  </script>
+                
+
               
               
               
@@ -2149,7 +2225,7 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
           
-            <span class="anchor" id=""></span>
+            <span class="anchor" id="PHDTHESIS"></span>
             <div class="paper">
               <p class="title"><b>Optimal Transport in Structured Domains: Algorithms and Applications</b></p>
               <p><b>David Alvarez-Melis</b> (advisor: Tommi S. Jaakkola)</p>
@@ -2800,9 +2876,13 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
               <!-- Additional hidden containers that should appear after buttons -->
               
-                <div id="talk_ml_GW-align" class="hidden">
-                  <iframe src="https://player.vimeo.com/video/305660461" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </div>
+                
+                  <!-- Prior to Feb 2021: Iframe Approach -->
+                  <div id="talk_ml_GW-align" class="hidden">
+                    <iframe src="https://player.vimeo.com/video/305660461" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+                  </div>
+                
+
               
               
                 <div id="press_ml_GW-align" class="hidden">
@@ -3880,9 +3960,13 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
               <!-- Additional hidden containers that should appear after buttons -->
               
-                <div id="talk_nlp_GW-align" class="hidden">
-                  <iframe src="https://player.vimeo.com/video/305660461" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </div>
+                
+                  <!-- Prior to Feb 2021: Iframe Approach -->
+                  <div id="talk_nlp_GW-align" class="hidden">
+                    <iframe src="https://player.vimeo.com/video/305660461" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+                  </div>
+                
+
               
               
                 <div id="press_nlp_GW-align" class="hidden">
@@ -4385,6 +4469,15 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
                    <!-- paper has attrib filter -->
                 
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="javascript:unhide('talk_ot_OTDD');">talk</a>
+                    
+
                    <!-- paper has attrib filter -->
                 
                    <!-- paper has attrib filter -->
@@ -4418,6 +4511,20 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
               </div>
 
               <!-- Additional hidden containers that should appear after buttons -->
+              
+                
+                  <!-- New: Slides Live Embedded Approach -->
+                  <div id="talk_ot_OTDD" class="hidden"></div>
+                  <script src='https://slideslive.com/embed_presentation.js'></script>
+                  <script>
+                      embed = new SlidesLiveEmbed("talk_ot_OTDD", {
+                          presentationId: 38930654,
+                          autoPlay: false, // change to true to autoplay the embedded presentation
+                          verticalEnabled: true
+                      });
+                  </script>
+                
+
               
               
                 <div id="press_ot_OTDD" class="hidden">
@@ -4492,9 +4599,19 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
               <!-- Additional hidden containers that should appear after buttons -->
               
-                <div id="talk_ot_HyperOT" class="hidden">
-                  <iframe src="https://slideslive.com/38930095/" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </div>
+                
+                  <!-- New: Slides Live Embedded Approach -->
+                  <div id="talk_ot_HyperOT" class="hidden"></div>
+                  <script src='https://slideslive.com/embed_presentation.js'></script>
+                  <script>
+                      embed = new SlidesLiveEmbed("talk_ot_HyperOT", {
+                          presentationId: 38930095,
+                          autoPlay: false, // change to true to autoplay the embedded presentation
+                          verticalEnabled: true
+                      });
+                  </script>
+                
+
               
               
               
@@ -4509,7 +4626,7 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
           
-            <span class="anchor" id=""></span>
+            <span class="anchor" id="PHDTHESIS"></span>
             <div class="paper">
               <p class="title"><b>Optimal Transport in Structured Domains: Algorithms and Applications</b></p>
               <p><b>David Alvarez-Melis</b> (advisor: Tommi S. Jaakkola)</p>
@@ -4890,9 +5007,13 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
               <!-- Additional hidden containers that should appear after buttons -->
               
-                <div id="talk_ot_GW-align" class="hidden">
-                  <iframe src="https://player.vimeo.com/video/305660461" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </div>
+                
+                  <!-- Prior to Feb 2021: Iframe Approach -->
+                  <div id="talk_ot_GW-align" class="hidden">
+                    <iframe src="https://player.vimeo.com/video/305660461" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+                  </div>
+                
+
               
               
                 <div id="press_ot_GW-align" class="hidden">
@@ -5080,7 +5201,7 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
           
-            <span class="anchor" id=""></span>
+            <span class="anchor" id="WOE-HCML"></span>
             <div class="paper">
               <p class="title"><b>Weight of Evidence as a Basis for Human-Oriented Explanations</b></p>
               <p><b>David Alvarez-Melis</b>, Hal Daumé III, Jennifer Wortman Vaughan, Hanna Wallach</p>
@@ -5622,7 +5743,7 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
           
-            <span class="anchor" id=""></span>
+            <span class="anchor" id="PHDTHESIS"></span>
             <div class="paper">
               <p class="title"><b>Optimal Transport in Structured Domains: Algorithms and Applications</b></p>
               <p><b>David Alvarez-Melis</b> (advisor: Tommi S. Jaakkola)</p>
@@ -5902,6 +6023,15 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
                    <!-- paper has attrib filter -->
                 
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="javascript:unhide('talk_all_OTDD');">talk</a>
+                    
+
                    <!-- paper has attrib filter -->
                 
                    <!-- paper has attrib filter -->
@@ -5935,6 +6065,20 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
               </div>
 
               <!-- Additional hidden containers that should appear after buttons -->
+              
+                
+                  <!-- New: Slides Live Embedded Approach -->
+                  <div id="talk_all_OTDD" class="hidden"></div>
+                  <script src='https://slideslive.com/embed_presentation.js'></script>
+                  <script>
+                      embed = new SlidesLiveEmbed("talk_all_OTDD", {
+                          presentationId: 38930654,
+                          autoPlay: false, // change to true to autoplay the embedded presentation
+                          verticalEnabled: true
+                      });
+                  </script>
+                
+
               
               
                 <div id="press_all_OTDD" class="hidden">
@@ -6009,9 +6153,19 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
               <!-- Additional hidden containers that should appear after buttons -->
               
-                <div id="talk_all_HyperOT" class="hidden">
-                  <iframe src="https://slideslive.com/38930095/" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </div>
+                
+                  <!-- New: Slides Live Embedded Approach -->
+                  <div id="talk_all_HyperOT" class="hidden"></div>
+                  <script src='https://slideslive.com/embed_presentation.js'></script>
+                  <script>
+                      embed = new SlidesLiveEmbed("talk_all_HyperOT", {
+                          presentationId: 38930095,
+                          autoPlay: false, // change to true to autoplay the embedded presentation
+                          verticalEnabled: true
+                      });
+                  </script>
+                
+
               
               
               
@@ -6076,7 +6230,7 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
           
-            <span class="anchor" id=""></span>
+            <span class="anchor" id="WOE-HCML"></span>
             <div class="paper">
               <p class="title"><b>Weight of Evidence as a Basis for Human-Oriented Explanations</b></p>
               <p><b>David Alvarez-Melis</b>, Hal Daumé III, Jennifer Wortman Vaughan, Hanna Wallach</p>
@@ -6132,7 +6286,7 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
           
-            <span class="anchor" id=""></span>
+            <span class="anchor" id="PHDTHESIS"></span>
             <div class="paper">
               <p class="title"><b>Optimal Transport in Structured Domains: Algorithms and Applications</b></p>
               <p><b>David Alvarez-Melis</b> (advisor: Tommi S. Jaakkola)</p>
@@ -6783,9 +6937,13 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
               <!-- Additional hidden containers that should appear after buttons -->
               
-                <div id="talk_all_GW-align" class="hidden">
-                  <iframe src="https://player.vimeo.com/video/305660461" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </div>
+                
+                  <!-- Prior to Feb 2021: Iframe Approach -->
+                  <div id="talk_all_GW-align" class="hidden">
+                    <iframe src="https://player.vimeo.com/video/305660461" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+                  </div>
+                
+
               
               
                 <div id="press_all_GW-align" class="hidden">
