@@ -1,5 +1,13 @@
 h4 {
   letter-spacing: .1rem; }
+.button {
+  /* display: inline-block;
+  height: 25px; */
+  padding: 0 10px;
+  /* font-weight: 100;
+  line-height: 25px;
+  text-transform: none;  */
+}
 .container {
   max-width: 800px; }
 .header {
@@ -30,7 +38,7 @@ h4 {
 .paper .button {
   display: inline-block;
   height: 25px;
-  padding: 0 25px;
+  padding: 0 20px;
   font-weight: 100;
   line-height: 25px;
   text-transform: none; }
