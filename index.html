@@ -130,8 +130,9 @@
           <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Publications</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#projects>Projects</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#teaching>Teaching</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#advising>Advising</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#resume>Vita</a></li>
-          <li class="navbar-item"><a class="navbar-link" href=/index.html#misc>Misc</a></li>
+          <!-- <li class="navbar-item"><a class="navbar-link" href=/index.html#misc>Misc</a></li> -->
           <!-- <li class="navbar-item"><a class="navbar-link" href=/index.html#meta>Meta</a></li> -->
         </ul>
       </div>
@@ -155,8 +156,8 @@ function unhide(divID) {
   <h4>About</h4>
 
   <p>
-  I'm a Senior Researcher at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/'>Microsoft Research New England</a>, within the Machine Learning and Statstics group.
-  My research seeks to make machine learning more <b>broadly applicable</b> (especially to data-poor applications) and <b>trustworthy</b> (e.g., robust and interpretable). I am particularly interested in the implications of these two directions for applications in the natural and medical sciences.
+  I'm a Senior Researcher at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/' target="_blank" rel="noopener noreferrer">Microsoft Research New England</a>, within the Machine Learning and Statstics group.
+  My research seeks to make machine learning more <b>broadly applicable</b> (especially to data-poor applications) and <b>trustworthy</b> (e.g., robust and interpretable). I am particularly interested in the implications of these two directions for applications in the natural and medical sciences. 
 
   </p><p>
   My approach to the first of these goals draws on ideas from statistics, optimization, and applied mathemtics, especially <a href="https://en.wikipedia.org/wiki/Transportation_theory_(mathematics)" target="_blank">optimal transport</a>, which I have used to develop methods to mitigate data scarcity by various types of geometric dataset manipulations: <a href="#InvarOT">alignment</a>, <a href="#OTDD">comparison</a>, <a href="#GWGAN">generation</a>, and <a href="#OTGF">transformation</a>.
@@ -166,6 +167,9 @@ function unhide(divID) {
   </p><p>
   In the past, I worked on various aspects of learning with highly-structured data such as text or graphs, ranging from <a href="#WE-metric">learning representations</a> of structured objects, to <a href="#DRNN">generating them</a>, to <a href="#interpseq">interpreting models</a> that operate on them.
 
+  <p>
+  <b>Update:</b> In July 2023, I will be joining <a href="https://www.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Harvard SEAS</a> as an Assistant Professor of Computer Science. I will be looking for motivated PhD students and postdocs to join my group. If you are interested in working with me, send me <a href="mailto:dam@seas.harvard.edu">an email</a> with the subject line "[Harvard] Interested in joining your group" and a brief description of your interests and background. 
+  </p>
    <!-- to <a href="#SOT">computing distances</a> between them. The latter two aspects form the core themes of my PhD work:
   <UL style="margin:15px;padding:0px;"> -->
 
@@ -233,7 +237,43 @@ function unhide(divID) {
   <!-- <p> Scroll for older news </p> -->
   <UL style="list-style-type: none; padding: 2px; overflow-y: scroll; height:500px;">
     
-    <li> [12/06/20-12/14/20]
+    <li> [07/15/2022]
+      
+              Paper: <a href="#JKOICNN">Optimizing Functionals on the Space of Probabilities with Input Convex Neural Networks</a> accepted to TMLR.
+      
+    </li>
+    
+    <li> [07/06/2022]
+      
+       Anna Yeaton will be preseting our work on Optimal Transport for Histopathology at MIDL 2022.
+      
+    </li>
+    
+    <li> [05/16/2022]
+      
+       Giving a talk at the IMSI Workshop on Applied Optimal Transport: 'Machine Learning in the Space of Datasets: an Optimal Transport Perspective'
+      
+    </li>
+    
+    <li> [05/14/2022]
+      
+       Will be serving as AC for ACML 2022.
+      
+    </li>
+    
+    <li> [03/18/2022]
+      
+       Giving a talk at the AMS Special Session on Maths of Data Science: 'Principled Data Manipulation with Optimal Transport'
+      
+    </li>
+    
+    <li> [01/31/2022]
+      
+       I will be serving as associate chair for ICML 2022.
+      
+    </li>
+    
+    <li> [12/06/21-12/14/21]
       
        'Attending' NeurIPS. Presenting 'JKO-ICNN' at the OTML workshop.
       
@@ -779,11 +819,11 @@ function unhide(divID) {
         
 
           
-            <span class="anchor" id="JKOICNN"></span>
+            <span class="anchor" id="HHOT"></span>
             <div class="paper">
-              <p class="title"><b>Optimizing Functionals on the Space of Probabilities with Input Convex Neural Networks</b></p>
-              <p><b>David Alvarez-Melis</b>, Yair Schiff, Youssef Mroueh</p>
-              <p><i>Optimal Transport in Machine Learning Workshop (OTML) at NeurIPS. 2021.</i></p>
+              <p class="title"><b>Hierarchical Optimal Transport for Comparing Histopathology Datasets</b></p>
+              <p>Anna Yeaton, Rahul G. Krishnan, Rebecca Mieloszyk, <b>David Alvarez-Melis</b>, Grace Huynh</p>
+              <p><i>Medical Imaging in Deep Learning (MIDL). 2022.</i></p>
 
               <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
               
@@ -791,6 +831,82 @@ function unhide(divID) {
               <div class="paper-buttons">
                 
                 
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2022_hhot/MIDL2022_HHOT.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2204.08324" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="JKOICNN"></span>
+            <div class="paper">
+              <p class="title"><b>Optimizing Functionals on the Space of Probabilities with Input Convex Neural Networks</b></p>
+              <p><b>David Alvarez-Melis</b>, Yair Schiff, Youssef Mroueh</p>
+              <p><i>Transactions of Machine Learning Research (TMLR). 2022.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              <p>Earlier version at <i>OTML: NeurIPS'21 Workshop on Optimal Transport in Machine Learning </i>.</p>
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2022_jkoicnn/TMLR2022_JKOICNN.pdf" target="_blank">pdf</a>
+                    
+
                    <!-- paper has attrib filter -->
                 
                    <!-- paper has attrib filter -->
@@ -2304,69 +2420,9 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
       <div class="tab-pane" id="papers-preprint">
         
 
-          
-            <span class="anchor" id="JKOICNN"></span>
-            <div class="paper">
-              <p class="title"><b>Optimizing Functionals on the Space of Probabilities with Input Convex Neural Networks</b></p>
-              <p><b>David Alvarez-Melis</b>, Yair Schiff, Youssef Mroueh</p>
-              <p><i>Optimal Transport in Machine Learning Workshop (OTML) at NeurIPS. 2021.</i></p>
+           <!-- paper in category filter -->
+        
 
-              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
-              
-
-              <div class="paper-buttons">
-                
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                  
-                    
-                        
-                      
-
-                    
-                      <a class="button" href="https://arxiv.org/abs/2106.00774" target="_blank">arxiv</a>
-                    
-
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                  
-                    
-                        
-                      <!-- External URLS -->
-                      
-
-                    
-                      <a class="button" href="/assets/publications/2021_jkoicnn/OTML2021_JKOICNN_poster.pdf" target="_blank">poster</a>
-                    
-
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                 <!-- over attribs -->
-              </div>
-
-              <!-- Additional hidden containers that should appear after buttons -->
-              
-              
-              
-            </div>
            <!-- paper in category filter -->
         
 
@@ -2511,11 +2567,11 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
           
-            <span class="anchor" id="JKOICNN"></span>
+            <span class="anchor" id="HHOT"></span>
             <div class="paper">
-              <p class="title"><b>Optimizing Functionals on the Space of Probabilities with Input Convex Neural Networks</b></p>
-              <p><b>David Alvarez-Melis</b>, Yair Schiff, Youssef Mroueh</p>
-              <p><i>Optimal Transport in Machine Learning Workshop (OTML) at NeurIPS. 2021.</i></p>
+              <p class="title"><b>Hierarchical Optimal Transport for Comparing Histopathology Datasets</b></p>
+              <p>Anna Yeaton, Rahul G. Krishnan, Rebecca Mieloszyk, <b>David Alvarez-Melis</b>, Grace Huynh</p>
+              <p><i>Medical Imaging in Deep Learning (MIDL). 2022.</i></p>
 
               <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
               
@@ -2523,6 +2579,82 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
               <div class="paper-buttons">
                 
                 
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2022_hhot/MIDL2022_HHOT.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2204.08324" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="JKOICNN"></span>
+            <div class="paper">
+              <p class="title"><b>Optimizing Functionals on the Space of Probabilities with Input Convex Neural Networks</b></p>
+              <p><b>David Alvarez-Melis</b>, Yair Schiff, Youssef Mroueh</p>
+              <p><i>Transactions of Machine Learning Research (TMLR). 2022.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              <p>Earlier version at <i>OTML: NeurIPS'21 Workshop on Optimal Transport in Machine Learning </i>.</p>
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2022_jkoicnn/TMLR2022_JKOICNN.pdf" target="_blank">pdf</a>
+                    
+
                    <!-- paper has attrib filter -->
                 
                    <!-- paper has attrib filter -->
@@ -4673,6 +4805,9 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
            <!-- paper in category filter -->
         
 
+           <!-- paper in category filter -->
+        
+
           
             <span class="anchor" id=""></span>
             <div class="paper">
@@ -5303,11 +5438,11 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
           
-            <span class="anchor" id="JKOICNN"></span>
+            <span class="anchor" id="HHOT"></span>
             <div class="paper">
-              <p class="title"><b>Optimizing Functionals on the Space of Probabilities with Input Convex Neural Networks</b></p>
-              <p><b>David Alvarez-Melis</b>, Yair Schiff, Youssef Mroueh</p>
-              <p><i>Optimal Transport in Machine Learning Workshop (OTML) at NeurIPS. 2021.</i></p>
+              <p class="title"><b>Hierarchical Optimal Transport for Comparing Histopathology Datasets</b></p>
+              <p>Anna Yeaton, Rahul G. Krishnan, Rebecca Mieloszyk, <b>David Alvarez-Melis</b>, Grace Huynh</p>
+              <p><i>Medical Imaging in Deep Learning (MIDL). 2022.</i></p>
 
               <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
               
@@ -5315,6 +5450,82 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
               <div class="paper-buttons">
                 
                 
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2022_hhot/MIDL2022_HHOT.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2204.08324" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="JKOICNN"></span>
+            <div class="paper">
+              <p class="title"><b>Optimizing Functionals on the Space of Probabilities with Input Convex Neural Networks</b></p>
+              <p><b>David Alvarez-Melis</b>, Yair Schiff, Youssef Mroueh</p>
+              <p><i>Transactions of Machine Learning Research (TMLR). 2022.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              <p>Earlier version at <i>OTML: NeurIPS'21 Workshop on Optimal Transport in Machine Learning </i>.</p>
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2022_jkoicnn/TMLR2022_JKOICNN.pdf" target="_blank">pdf</a>
+                    
+
                    <!-- paper has attrib filter -->
                 
                    <!-- paper has attrib filter -->
@@ -6353,6 +6564,9 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
            <!-- paper in category filter -->
         
 
+           <!-- paper in category filter -->
+        
+
           
             <span class="anchor" id="WOE"></span>
             <div class="paper">
@@ -6997,6 +7211,9 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
            <!-- paper in category filter -->
         
 
+           <!-- paper in category filter -->
+        
+
           
             <span class="anchor" id="PHDTHESIS"></span>
             <div class="paper">
@@ -7225,11 +7442,11 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
           
-            <span class="anchor" id="JKOICNN"></span>
+            <span class="anchor" id="HHOT"></span>
             <div class="paper">
-              <p class="title"><b>Optimizing Functionals on the Space of Probabilities with Input Convex Neural Networks</b></p>
-              <p><b>David Alvarez-Melis</b>, Yair Schiff, Youssef Mroueh</p>
-              <p><i>Optimal Transport in Machine Learning Workshop (OTML) at NeurIPS. 2021.</i></p>
+              <p class="title"><b>Hierarchical Optimal Transport for Comparing Histopathology Datasets</b></p>
+              <p>Anna Yeaton, Rahul G. Krishnan, Rebecca Mieloszyk, <b>David Alvarez-Melis</b>, Grace Huynh</p>
+              <p><i>Medical Imaging in Deep Learning (MIDL). 2022.</i></p>
 
               <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
               
@@ -7237,6 +7454,82 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
               <div class="paper-buttons">
                 
                 
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2022_hhot/MIDL2022_HHOT.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2204.08324" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="JKOICNN"></span>
+            <div class="paper">
+              <p class="title"><b>Optimizing Functionals on the Space of Probabilities with Input Convex Neural Networks</b></p>
+              <p><b>David Alvarez-Melis</b>, Yair Schiff, Youssef Mroueh</p>
+              <p><i>Transactions of Machine Learning Research (TMLR). 2022.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              <p>Earlier version at <i>OTML: NeurIPS'21 Workshop on Optimal Transport in Machine Learning </i>.</p>
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2022_jkoicnn/TMLR2022_JKOICNN.pdf" target="_blank">pdf</a>
+                    
+
                    <!-- paper has attrib filter -->
                 
                    <!-- paper has attrib filter -->
@@ -9632,6 +9925,25 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
      <!-- over categories -->
 </div>
 
+<!-- ========== Advising ========== -->
+<span class="anchor" id="advising"></span>
+<div class="docs-section">
+  <h4>Students, Interns and Advisees</h4>
+
+  <p>
+    Working with students and junior researchers is undoubtedly the best part of my job. I've been fortunate to advise a number of phenomenal students in the past, including:
+  <ul>
+  <li> <a href="https://www.bunne.ch/">Charlotte Bunne</a>: Master's thesis, ETH. Now a PhD student at ETH.</li>
+  <li> <a href="https://www.linkedin.com/in/annayeaton/">Anna Yeaton</a>: MSR PhD Summer Internship. Now a Postdoc at the Broad Institute.</li>
+  <li> <a href="https://haileyjames.github.io/">Hailey James</a>: MIT UROP. Now a PhD student at UCSD.</li>
+  <li> <a href="https://healthyml.org/author/neha-hulkund/">Neha Hulkund</a>: MSR Winter Micro-Internship. Now an M.S. student at MIT CSAIL.</li>
+  </ul>
+
+  </p>
+
+</div>
+
+
 <!-- ========== TEACHING ========== -->
 <span class="anchor" id="teaching"></span>
 <div class="docs-section">
@@ -9662,7 +9974,6 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
 <!-- ========== RESUME ========== -->
 <span class="anchor" id="resume"></span>
-
 <div class="docs-section">
   <h4>Vit&#230;</h4>
 
