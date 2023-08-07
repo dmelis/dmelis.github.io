@@ -156,11 +156,11 @@ function unhide(divID) {
   <h4>About</h4>
 
   <p>
-  I'm a Senior Researcher at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/' target="_blank" rel="noopener noreferrer">Microsoft Research New England</a>, within the Machine Learning and Statstics group.
+  I'm a Senior Researcher at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/' target="_blank" rel="noopener noreferrer">Microsoft Research New England</a>, within the Machine Learning and Statistics group, and an incoming Assistant Professor of Computer Science at  <a href="https://www.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Harvard SEAS</a>. 
   My research seeks to make machine learning more <b>broadly applicable</b> (especially to data-poor applications) and <b>trustworthy</b> (e.g., robust and interpretable). I am particularly interested in the implications of these two directions for applications in the natural and medical sciences. 
 
   </p><p>
-  My approach to the first of these goals draws on ideas from statistics, optimization, and applied mathemtics, especially <a href="https://en.wikipedia.org/wiki/Transportation_theory_(mathematics)" target="_blank">optimal transport</a>, which I have used to develop methods to mitigate data scarcity by various types of geometric dataset manipulations: <a href="#InvarOT">alignment</a>, <a href="#OTDD">comparison</a>, <a href="#GWGAN">generation</a>, and <a href="#OTGF">transformation</a>.
+  My approach to the first of these goals draws on ideas from statistics, optimization, and applied mathematics, especially <a href="https://en.wikipedia.org/wiki/Transportation_theory_(mathematics)" target="_blank">optimal transport</a>, which I have used to develop methods to mitigate data scarcity by various types of geometric dataset manipulations: <a href="#InvarOT">alignment</a>, <a href="#OTDD">comparison</a>, <a href="#GWGAN">generation</a>, and <a href="#OTGF">transformation</a>.
   <a href="https://www.microsoft.com/en-us/research/video/directions-in-ml-automating-dataset-comparison-and-manipulation-with-optimal-transport/">This talk</a> provides a high-level overview of this part of my work.
   </p><p>
   As for trustworthy machine learning, I have worked on methods for explaining predictions of <a href="#interpseq">black box models</a>, showed their <a href="#Robust-interpret">lack of robustness</a>, proposed methods to <a href="#SENN">robustify them</a>, and sought inspiration in the social sciences to make them <a href="WOE-HCML">human-centered</a>.
@@ -168,8 +168,7 @@ function unhide(divID) {
   In the past, I worked on various aspects of learning with highly-structured data such as text or graphs, ranging from <a href="#WE-metric">learning representations</a> of structured objects, to <a href="#DRNN">generating them</a>, to <a href="#interpseq">interpreting models</a> that operate on them.
 
   <p>
-  <b>Update:</b> In July 2023, I will be joining <a href="https://www.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Harvard SEAS</a> as an Assistant Professor of Computer Science. 
-  If you are interested in joining my group, please <a href="#joining">read this</a>.   
+  <b>Prospective lab members:</b> If you are interested in joining my group at Harvard, please <a href="#joining">read this</a>.   
   </p>
    <!-- to <a href="#SOT">computing distances</a> between them. The latter two aspects form the core themes of my PhD work:
   <UL style="margin:15px;padding:0px;"> -->
@@ -201,7 +200,7 @@ function unhide(divID) {
 <span class="anchor" id="bio"></span>
 <div class="docs-section">
   <h4>Bio</h4>
-  <p> Before coming to MSR, I obtained a PhD in computer science from MIT, where I worked on
+  <p> I obtained a PhD in computer science from MIT, where I worked at <a href="https://www.csail.mit.edu/">CSAIL</a>  on
     various topics in machine learning and natural language processing under the
     supervision of <a href="http://people.csail.mit.edu/tommi/"> Tommi Jaakkola</a>, and close collaboration with <a href="https://people.csail.mit.edu/stefje/">Stefanie Jegelka</a>.
     I also hold BSc (Licenciatura) and MS degrees in mathematics from
@@ -895,6 +894,204 @@ function unhide(divID) {
     
       
       <div class="tab-pane active" id="papers-selected">
+        
+
+          
+            <span class="anchor" id="GeodInterp"></span>
+            <div class="paper">
+              <p class="title"><b>Generating Synthetic Datasets by Interpolating along Generalized Geodesics</b></p>
+              <p>Jiaojiao Fan, <b>David Alvarez-Melis</b></p>
+              <p><i>UAI'23: Uncertainty in Artificial Intelligence. 2023</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2023_gengeod/UAI2023_GenGeod.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2306.06866" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="https://www.auai.org/uai2023/posters/236.pdf" target="_blank">poster</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                    
+
+                    
+                      <a class="button" href="javascript:unhide('bib_selected_GeodInterp');">bib</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+                <div id="bib_selected_GeodInterp" class="hidden">
+                  <pre> 
+@INPROCEEDINGS{fan2023generating,
+  title      = "Generating Synthetic Datasets by Interpolating along
+                Generalized Geodesics",
+  booktitle  = "Proceedings of the {Thirty-Ninth} Conference on Uncertainty in
+                Artificial Intelligence",
+  author     = "Fan, Jiaojiao and Alvarez-Melis, David",
+  publisher  = "Proceedings of Machine Learning Research",
+  year       =  2023,
+  conference = "Uncertainty in Artificial Intelligence"
+}
+ </pre>
+                </div>
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="InfoOT"></span>
+            <div class="paper">
+              <p class="title"><b>InfoOT: Information Maximizing Optimal Transport</b></p>
+              <p>Ching-Yao Chuang, Stefanie Jegelka, <b>David Alvarez-Melis</b></p>
+              <p><i>ICML'23: International Conference on Machine Learning. 2023.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2023_infoot/ICML2023_InfoOT.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2210.03164" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                    
+
+                    
+                      <a class="button" href="javascript:unhide('bib_selected_InfoOT');">bib</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+                <div id="bib_selected_InfoOT" class="hidden">
+                  <pre> 
+@INPROCEEDINGS{chuang2023infoot,
+  title       = "{InfoOT}: Information Maximizing Optimal Transport",
+  booktitle   = "Proceedings of the 40th International Conference on Machine
+                 Learning",
+  author      = "Chuang, Ching-Yao and Jegelka, Stefanie and Alvarez-Melis,
+                 David",
+  editor      = "Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and
+                 Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan",
+  publisher   = "PMLR",
+  volume      =  202,
+  pages       = "6228--6242",
+  series      = "Proceedings of Machine Learning Research",
+  institution = "PMLR",
+  year        =  2023
+}
+ </pre>
+                </div>
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+           <!-- paper in category filter -->
         
 
            <!-- paper in category filter -->
@@ -2442,59 +2639,12 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
       <div class="tab-pane" id="papers-preprint">
         
 
-          
-            <span class="anchor" id="InfoOT"></span>
-            <div class="paper">
-              <p class="title"><b>InfoOT: Information Maximizing Optimal Transport</b></p>
-              <p>Ching-Yao Chuang, Stefanie Jegelka, <b>David Alvarez-Melis</b></p>
-              <p><i></i></p>
+           <!-- paper in category filter -->
+        
 
-              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
-              
+           <!-- paper in category filter -->
+        
 
-              <div class="paper-buttons">
-                
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                  
-                    
-                        
-                      
-
-                    
-                      <a class="button" href="https://arxiv.org/abs/2210.03164" target="_blank">arxiv</a>
-                    
-
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                
-                   <!-- paper has attrib filter -->
-                 <!-- over attribs -->
-              </div>
-
-              <!-- Additional hidden containers that should appear after buttons -->
-              
-              
-              
-            </div>
            <!-- paper in category filter -->
         
 
@@ -2639,6 +2789,9 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
            <!-- paper in category filter -->
+        
+
+           <!-- paper in category filter -->
          <!-- over papers -->
       </div>
     
@@ -2646,6 +2799,264 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
       <div class="tab-pane" id="papers-ml">
         
 
+          
+            <span class="anchor" id="GeodInterp"></span>
+            <div class="paper">
+              <p class="title"><b>Generating Synthetic Datasets by Interpolating along Generalized Geodesics</b></p>
+              <p>Jiaojiao Fan, <b>David Alvarez-Melis</b></p>
+              <p><i>UAI'23: Uncertainty in Artificial Intelligence. 2023</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2023_gengeod/UAI2023_GenGeod.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2306.06866" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="https://www.auai.org/uai2023/posters/236.pdf" target="_blank">poster</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                    
+
+                    
+                      <a class="button" href="javascript:unhide('bib_ml_GeodInterp');">bib</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+                <div id="bib_ml_GeodInterp" class="hidden">
+                  <pre> 
+@INPROCEEDINGS{fan2023generating,
+  title      = "Generating Synthetic Datasets by Interpolating along
+                Generalized Geodesics",
+  booktitle  = "Proceedings of the {Thirty-Ninth} Conference on Uncertainty in
+                Artificial Intelligence",
+  author     = "Fan, Jiaojiao and Alvarez-Melis, David",
+  publisher  = "Proceedings of Machine Learning Research",
+  year       =  2023,
+  conference = "Uncertainty in Artificial Intelligence"
+}
+ </pre>
+                </div>
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="InfoOT"></span>
+            <div class="paper">
+              <p class="title"><b>InfoOT: Information Maximizing Optimal Transport</b></p>
+              <p>Ching-Yao Chuang, Stefanie Jegelka, <b>David Alvarez-Melis</b></p>
+              <p><i>ICML'23: International Conference on Machine Learning. 2023.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2023_infoot/ICML2023_InfoOT.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2210.03164" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                    
+
+                    
+                      <a class="button" href="javascript:unhide('bib_ml_InfoOT');">bib</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+                <div id="bib_ml_InfoOT" class="hidden">
+                  <pre> 
+@INPROCEEDINGS{chuang2023infoot,
+  title       = "{InfoOT}: Information Maximizing Optimal Transport",
+  booktitle   = "Proceedings of the 40th International Conference on Machine
+                 Learning",
+  author      = "Chuang, Ching-Yao and Jegelka, Stefanie and Alvarez-Melis,
+                 David",
+  editor      = "Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and
+                 Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan",
+  publisher   = "PMLR",
+  volume      =  202,
+  pages       = "6228--6242",
+  series      = "Proceedings of Machine Learning Research",
+  institution = "PMLR",
+  year        =  2023
+}
+ </pre>
+                </div>
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="DAHistOT"></span>
+            <div class="paper">
+              <p class="title"><b>Domain Adaptation using Optimal Transport for Invariant Larning using Histopathology datasets</b></p>
+              <p>Kianoush Falahkheirkhah, Alex Lu, <b>David Alvarez-Melis</b>, and Grace Huynh</p>
+              <p><i>Medical Imaging in Deep Learning (MIDL). 2023.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2022_dahistot/MIDL2023_DAHistOT.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2303.02241" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+            </div>
            <!-- paper in category filter -->
         
 
@@ -2743,6 +3154,62 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
                     
                       <a class="button" href="https://arxiv.org/abs/2204.08324" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="ShiftDetectOT"></span>
+            <div class="paper">
+              <p class="title"><b>Interpretable Distribution Shift Detection using Optimal Transport</b></p>
+              <p>Neha Hulkund, Nicolo Fusi, Jennifer Wortman Vaughan, David Alvarez-Melis</p>
+              <p><i>DataPerf Workshop at ICML 2022</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2208.02896" target="_blank">arxiv</a>
                     
 
                    <!-- paper has attrib filter -->
@@ -4879,6 +5346,12 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
            <!-- paper in category filter -->
         
 
+           <!-- paper in category filter -->
+        
+
+           <!-- paper in category filter -->
+        
+
           
             <span class="anchor" id="GANvsXENT"></span>
             <div class="paper">
@@ -4933,6 +5406,9 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
               
               
             </div>
+           <!-- paper in category filter -->
+        
+
            <!-- paper in category filter -->
         
 
@@ -5584,11 +6060,11 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
           
-            <span class="anchor" id="InfoOT"></span>
+            <span class="anchor" id="GeodInterp"></span>
             <div class="paper">
-              <p class="title"><b>InfoOT: Information Maximizing Optimal Transport</b></p>
-              <p>Ching-Yao Chuang, Stefanie Jegelka, <b>David Alvarez-Melis</b></p>
-              <p><i></i></p>
+              <p class="title"><b>Generating Synthetic Datasets by Interpolating along Generalized Geodesics</b></p>
+              <p>Jiaojiao Fan, <b>David Alvarez-Melis</b></p>
+              <p><i>UAI'23: Uncertainty in Artificial Intelligence. 2023</i></p>
 
               <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
               
@@ -5596,6 +6072,116 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
               <div class="paper-buttons">
                 
                 
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2023_gengeod/UAI2023_GenGeod.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2306.06866" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="https://www.auai.org/uai2023/posters/236.pdf" target="_blank">poster</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                    
+
+                    
+                      <a class="button" href="javascript:unhide('bib_ot_GeodInterp');">bib</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+                <div id="bib_ot_GeodInterp" class="hidden">
+                  <pre> 
+@INPROCEEDINGS{fan2023generating,
+  title      = "Generating Synthetic Datasets by Interpolating along
+                Generalized Geodesics",
+  booktitle  = "Proceedings of the {Thirty-Ninth} Conference on Uncertainty in
+                Artificial Intelligence",
+  author     = "Fan, Jiaojiao and Alvarez-Melis, David",
+  publisher  = "Proceedings of Machine Learning Research",
+  year       =  2023,
+  conference = "Uncertainty in Artificial Intelligence"
+}
+ </pre>
+                </div>
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="InfoOT"></span>
+            <div class="paper">
+              <p class="title"><b>InfoOT: Information Maximizing Optimal Transport</b></p>
+              <p>Ching-Yao Chuang, Stefanie Jegelka, <b>David Alvarez-Melis</b></p>
+              <p><i>ICML'23: International Conference on Machine Learning. 2023.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2023_infoot/ICML2023_InfoOT.pdf" target="_blank">pdf</a>
+                    
+
                    <!-- paper has attrib filter -->
                 
                    <!-- paper has attrib filter -->
@@ -5607,6 +6193,101 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
                     
                       <a class="button" href="https://arxiv.org/abs/2210.03164" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                    
+
+                    
+                      <a class="button" href="javascript:unhide('bib_ot_InfoOT');">bib</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+                <div id="bib_ot_InfoOT" class="hidden">
+                  <pre> 
+@INPROCEEDINGS{chuang2023infoot,
+  title       = "{InfoOT}: Information Maximizing Optimal Transport",
+  booktitle   = "Proceedings of the 40th International Conference on Machine
+                 Learning",
+  author      = "Chuang, Ching-Yao and Jegelka, Stefanie and Alvarez-Melis,
+                 David",
+  editor      = "Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and
+                 Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan",
+  publisher   = "PMLR",
+  volume      =  202,
+  pages       = "6228--6242",
+  series      = "Proceedings of Machine Learning Research",
+  institution = "PMLR",
+  year        =  2023
+}
+ </pre>
+                </div>
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="DAHistOT"></span>
+            <div class="paper">
+              <p class="title"><b>Domain Adaptation using Optimal Transport for Invariant Larning using Histopathology datasets</b></p>
+              <p>Kianoush Falahkheirkhah, Alex Lu, <b>David Alvarez-Melis</b>, and Grace Huynh</p>
+              <p><i>Medical Imaging in Deep Learning (MIDL). 2023.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2022_dahistot/MIDL2023_DAHistOT.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2303.02241" target="_blank">arxiv</a>
                     
 
                    <!-- paper has attrib filter -->
@@ -5732,6 +6413,62 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
                     
                       <a class="button" href="https://arxiv.org/abs/2204.08324" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="ShiftDetectOT"></span>
+            <div class="paper">
+              <p class="title"><b>Interpretable Distribution Shift Detection using Optimal Transport</b></p>
+              <p>Neha Hulkund, Nicolo Fusi, Jennifer Wortman Vaughan, David Alvarez-Melis</p>
+              <p><i>DataPerf Workshop at ICML 2022</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2208.02896" target="_blank">arxiv</a>
                     
 
                    <!-- paper has attrib filter -->
@@ -6834,6 +7571,68 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
            <!-- paper in category filter -->
         
 
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="ShiftDetectOT"></span>
+            <div class="paper">
+              <p class="title"><b>Interpretable Distribution Shift Detection using Optimal Transport</b></p>
+              <p>Neha Hulkund, Nicolo Fusi, Jennifer Wortman Vaughan, David Alvarez-Melis</p>
+              <p><i>DataPerf Workshop at ICML 2022</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2208.02896" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+           <!-- paper in category filter -->
+        
+
           
             <span class="anchor" id="WOE"></span>
             <div class="paper">
@@ -7484,6 +8283,15 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
            <!-- paper in category filter -->
         
 
+           <!-- paper in category filter -->
+        
+
+           <!-- paper in category filter -->
+        
+
+           <!-- paper in category filter -->
+        
+
           
             <span class="anchor" id="PHDTHESIS"></span>
             <div class="paper">
@@ -7712,11 +8520,11 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
         
 
           
-            <span class="anchor" id="InfoOT"></span>
+            <span class="anchor" id="GeodInterp"></span>
             <div class="paper">
-              <p class="title"><b>InfoOT: Information Maximizing Optimal Transport</b></p>
-              <p>Ching-Yao Chuang, Stefanie Jegelka, <b>David Alvarez-Melis</b></p>
-              <p><i></i></p>
+              <p class="title"><b>Generating Synthetic Datasets by Interpolating along Generalized Geodesics</b></p>
+              <p>Jiaojiao Fan, <b>David Alvarez-Melis</b></p>
+              <p><i>UAI'23: Uncertainty in Artificial Intelligence. 2023</i></p>
 
               <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
               
@@ -7724,6 +8532,116 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
               <div class="paper-buttons">
                 
                 
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2023_gengeod/UAI2023_GenGeod.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2306.06866" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="https://www.auai.org/uai2023/posters/236.pdf" target="_blank">poster</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                    
+
+                    
+                      <a class="button" href="javascript:unhide('bib_all_GeodInterp');">bib</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+                <div id="bib_all_GeodInterp" class="hidden">
+                  <pre> 
+@INPROCEEDINGS{fan2023generating,
+  title      = "Generating Synthetic Datasets by Interpolating along
+                Generalized Geodesics",
+  booktitle  = "Proceedings of the {Thirty-Ninth} Conference on Uncertainty in
+                Artificial Intelligence",
+  author     = "Fan, Jiaojiao and Alvarez-Melis, David",
+  publisher  = "Proceedings of Machine Learning Research",
+  year       =  2023,
+  conference = "Uncertainty in Artificial Intelligence"
+}
+ </pre>
+                </div>
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="InfoOT"></span>
+            <div class="paper">
+              <p class="title"><b>InfoOT: Information Maximizing Optimal Transport</b></p>
+              <p>Ching-Yao Chuang, Stefanie Jegelka, <b>David Alvarez-Melis</b></p>
+              <p><i>ICML'23: International Conference on Machine Learning. 2023.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2023_infoot/ICML2023_InfoOT.pdf" target="_blank">pdf</a>
+                    
+
                    <!-- paper has attrib filter -->
                 
                    <!-- paper has attrib filter -->
@@ -7735,6 +8653,101 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
                     
                       <a class="button" href="https://arxiv.org/abs/2210.03164" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                    
+
+                    
+                      <a class="button" href="javascript:unhide('bib_all_InfoOT');">bib</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+                <div id="bib_all_InfoOT" class="hidden">
+                  <pre> 
+@INPROCEEDINGS{chuang2023infoot,
+  title       = "{InfoOT}: Information Maximizing Optimal Transport",
+  booktitle   = "Proceedings of the 40th International Conference on Machine
+                 Learning",
+  author      = "Chuang, Ching-Yao and Jegelka, Stefanie and Alvarez-Melis,
+                 David",
+  editor      = "Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and
+                 Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan",
+  publisher   = "PMLR",
+  volume      =  202,
+  pages       = "6228--6242",
+  series      = "Proceedings of Machine Learning Research",
+  institution = "PMLR",
+  year        =  2023
+}
+ </pre>
+                </div>
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="DAHistOT"></span>
+            <div class="paper">
+              <p class="title"><b>Domain Adaptation using Optimal Transport for Invariant Larning using Histopathology datasets</b></p>
+              <p>Kianoush Falahkheirkhah, Alex Lu, <b>David Alvarez-Melis</b>, and Grace Huynh</p>
+              <p><i>Medical Imaging in Deep Learning (MIDL). 2023.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2022_dahistot/MIDL2023_DAHistOT.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2303.02241" target="_blank">arxiv</a>
                     
 
                    <!-- paper has attrib filter -->
@@ -7914,6 +8927,62 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
                     
                       <a class="button" href="https://arxiv.org/abs/2204.08324" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+            </div>
+           <!-- paper in category filter -->
+        
+
+          
+            <span class="anchor" id="ShiftDetectOT"></span>
+            <div class="paper">
+              <p class="title"><b>Interpretable Distribution Shift Detection using Optimal Transport</b></p>
+              <p>Neha Hulkund, Nicolo Fusi, Jennifer Wortman Vaughan, David Alvarez-Melis</p>
+              <p><i>DataPerf Workshop at ICML 2022</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/abs/2208.02896" target="_blank">arxiv</a>
                     
 
                    <!-- paper has attrib filter -->
@@ -10372,6 +11441,18 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
     
     <li>
       
+      <div class="direction-r">
+      
+        <div class="flag-wrapper">
+          <span class="flag">Harvard University</span>
+          <span class="time-wrapper"><span class="time">2023 -- </span></span>
+        </div>
+        <div class="desc"><b>Assistant Professor</b> <br/>  <br/> </div>
+      </div>
+    </li>
+    
+    <li>
+      
       <div class="direction-l">
       
         <div class="flag-wrapper">
@@ -10484,7 +11565,7 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
       <li><strong>You are a prospective Postdoc</strong>: send me <a href="mailto:dam@seas.harvard.edu">an email</a> with the subject line "[Prospect] Interested in joining your group (Postdoc)" with a CV, link to your publications, and a brief description of your interests and background. </li>
     </ul>
 
-    In any of the situations above, <strong>please include the word "Monge" anywhere in your the main body of your email</strong>, to show me you've read this page and not just sent a generic email to all faculty (I learnt this trick from <a href="https://finale.seas.harvard.edu/">Finale</a>).
+    In any of the situations above, <strong>please include the word "Monge" anywhere in your the main body of your email</strong>, to show me you've read this page and are not just sending a generic email to all faculty (I learnt this trick from <a href="https://finale.seas.harvard.edu/">Finale</a>).
     <p>
 
       If your email is not formatted as above, my filters won't catch it so I will almost certainly not see it. 
