@@ -85,8 +85,7 @@
             <h1>David Alvarez-Melis</h1>
             <p>(he/him/his)</p>
             <p>Assistant Professor, Harvard University (SEAS)</p>
-            <p>150 Western Av. #2-332 
- Allston MA 02134</p>
+            <p>150 Western Av. Room 2-332, Allston MA 02134</p>
             <p>[three initials]@seas.harvard.edu</p>
             <p>
               <span onclick="window.open('https://twitter.com/elmelis')" style="cursor: pointer">
@@ -129,9 +128,9 @@
           <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#news>News</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Publications</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#group>Group</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#projects>Projects</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#teaching>Teaching</a></li>
-          <li class="navbar-item"><a class="navbar-link" href=/index.html#advising>Advising</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#resume>Vita</a></li>
           <!-- <li class="navbar-item"><a class="navbar-link" href=/index.html#misc>Misc</a></li> -->
           <!-- <li class="navbar-item"><a class="navbar-link" href=/index.html#meta>Meta</a></li> -->
@@ -157,43 +156,16 @@ function unhide(divID) {
   <h4>About</h4>
 
   <p>
-  I'm an Assistant Professor of Computer Science at <a href="https://www.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Harvard SEAS</a>, and a Senior Researcher at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/' target="_blank" rel="noopener noreferrer">Microsoft Research New England</a>.
-  My research seeks to make machine learning more <b>broadly applicable</b> (especially to data-poor applications) and <b>trustworthy</b> (e.g., robust and interpretable). I am particularly interested in the implications of these two directions for applications in the natural and medical sciences. 
-
-  </p><p>
-  My approach to the first of these goals draws on ideas from statistics, optimization, and applied mathematics, especially <a href="https://en.wikipedia.org/wiki/Transportation_theory_(mathematics)" target="_blank">optimal transport</a>, which I have used to develop methods to mitigate data scarcity by various types of geometric dataset manipulations: <a href="#InvarOT">alignment</a>, <a href="#OTDD">comparison</a>, <a href="#GWGAN">generation</a>, and <a href="#OTGF">transformation</a>.
-  <a href="https://www.microsoft.com/en-us/research/video/directions-in-ml-automating-dataset-comparison-and-manipulation-with-optimal-transport/">This talk</a> provides a high-level overview of this part of my work.
-  </p><p>
-  As for trustworthy machine learning, I have worked on methods for explaining predictions of <a href="#interpseq">black box models</a>, showed their <a href="#Robust-interpret">lack of robustness</a>, proposed methods to <a href="#SENN">robustify them</a>, and sought inspiration in the social sciences to make them <a href="WOE-HCML">human-centered</a>.
-  </p><p>
-  In the past, I worked on various aspects of learning with highly-structured data such as text or graphs, ranging from <a href="#WE-metric">learning representations</a> of structured objects, to <a href="#DRNN">generating them</a>, to <a href="#interpseq">interpreting models</a> that operate on them.
+  I'm an Assistant Professor of Computer Science at <a href="https://www.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Harvard SEAS</a> where I lead the <a href="#group">Data-Centric Machine Learning (DCML) group</a>. I'm also an Affiliate Faculty at the <a href="https://kempnerinstitute.harvard.edu/" target="_blank" rel="noopener noreferrer">Kempner Institute</a>, and have affiliations with the <a href="https://crcs.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Center for Research on Computation and Society</a> and the <a href="https://datascience.harvard.edu/"  target="_blank" rel="noopener noreferrer">Harvard Data Science Initiative</a>. I am also a researcher at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/' target="_blank" rel="noopener noreferrer">Microsoft Research New England</a>.
+  </p>
 
   <p>
+  My research seeks to make machine learning more <b>broadly applicable</b> (especially to data-poor applications) and <b>trustworthy</b> (e.g., robust and interpretable). I am particularly interested in the implications of these two directions for applications in the natural and medical sciences. My approach to the first of these goals draws on ideas from statistics, optimization, and applied mathematics, especially <a href="https://en.wikipedia.org/wiki/Transportation_theory_(mathematics)" target="_blank">optimal transport</a>, which I have used to develop methods to mitigate data scarcity by various types of geometric dataset manipulations: <a href="#InvarOT">alignment</a>, <a href="#OTDD">comparison</a>, <a href="#GWGAN">generation</a>, and <a href="#OTGF">transformation</a>.
+  <a href="https://www.microsoft.com/en-us/research/video/directions-in-ml-automating-dataset-comparison-and-manipulation-with-optimal-transport/">This talk</a> provides a high-level overview of this part of my work.
+  As for trustworthy machine learning, I have worked on methods for explaining predictions of <a href="#interpseq">black box models</a>, showed their <a href="#Robust-interpret">lack of robustness</a>, proposed methods to <a href="#SENN">robustify them</a>, and sought inspiration in the social sciences to make them <a href="WOE-HCML">human-centered</a>.
+  In the past, I worked on various aspects of learning with highly-structured data such as text or graphs, ranging from <a href="#WE-metric">learning representations</a> of structured objects, to <a href="#DRNN">generating them</a>, to <a href="#interpseq">interpreting models</a> that operate on them.
+  </p><p>
   <b>Prospective lab members:</b> If you are interested in joining my group at Harvard, please <a href="#joining">read this</a>.   
-  </p>
-   <!-- to <a href="#SOT">computing distances</a> between them. The latter two aspects form the core themes of my PhD work:
-  <UL style="margin:15px;padding:0px;"> -->
-
-  <!-- I recently completed my Ph.D. at MIT,
-  working on Machine Learning and
-  Natural Language Processing under the supervision of <a href="http://people.csail.mit.edu/tommi/"> Tommi
-  Jaakkola</a>. My research revolves around learning in structured domains: from <a href="#WE-metric">learning representations</a> of structured objects, to <a href="#DRNN">generating them</a>, to <a href="#interpseq">interpreting models</a> that operate on them, to <a href="#SOT">computing distances</a> between them. The latter two aspects form the core themes of my PhD work:
-  <UL style="margin:15px;padding:0px;">
-  	<li> Optimal transport distances in structured domains </li>
-  	<li> Principled and robust interpretable machine learning (for structured data, and beyond) </li>
-  </UL> -->
-  <!-- Other topics that I have worked on in the past are:
-  <UL style="margin:15px;padding:0px;">
-  	<li> Perturbation-based approaches to interpretability in machine learning </li>
-  	<li> Optimal transport </li>
-  	<li> Generative adversarial networks</li>
-  	<li> [Un|semi]-supervised domain adaptation and machine translation.</li>
-  	<li> Tree and sequence embedding and generation. </li>
-  	<li> Semantic representations, their manifold structure and geometric properties.</li>
-  	<li> Optimization: Semidefinite programming, MMW, convex optimization.</li>
-  </UL>
-  -->
-
   </p>
 </div>
 
@@ -201,9 +173,10 @@ function unhide(divID) {
 <span class="anchor" id="bio"></span>
 <div class="docs-section">
   <h4>Bio</h4>
-  <p> I obtained a PhD in computer science from MIT, where I worked at <a href="https://www.csail.mit.edu/">CSAIL</a>  on
-    various topics in machine learning and natural language processing under the
-    supervision of <a href="http://people.csail.mit.edu/tommi/"> Tommi Jaakkola</a>, and close collaboration with <a href="https://people.csail.mit.edu/stefje/">Stefanie Jegelka</a>.
+  <p> I obtained a PhD in computer science from MIT, where I worked at <a href="https://www.csail.mit.edu/">CSAIL</a> on
+    various topics in machine learning and natural language processing.
+    <!-- % under the
+    supervision of <a href="http://people.csail.mit.edu/tommi/"> Tommi Jaakkola</a>, and close collaboration with <a href="https://people.csail.mit.edu/stefje/">Stefanie Jegelka</a>. -->
     I also hold BSc (Licenciatura) and MS degrees in mathematics from
      <a href="https://www.itam.mx">ITAM</a> and  <a href="https://www.courant.nyu.edu/">Courant Institute (NYU)</a>,
      respectively. During the latter, I worked on semidefinite programming for
@@ -212,20 +185,6 @@ function unhide(divID) {
     Research Center, working with <a
     href="http://researcher.watson.ibm.com/researcher/view.php?person=us-kwchurch">Ken Church </a> and others in the Speech
     Recognition Group.
-
-
-    <!-- I was born and raised in Mexico City (more specifically, in the Coyoacán neighborhood) in a Mexican-Belgian household -->
-
-
-
-
-    <!--
-  <p> I started my academic path at <a href="http:www.itam.mx">ITAM</a> (Mexico City), where I obtained a Licenciatura (BSc.) in Applied Mathematics with a thesis on functional analysis under the supervision of <a
-  href="http://www.itam.mx/es/facultad/profesoresDetalles.php?id_profesor=40">Carlos
-  Bosch</a>. After that, I earned an MS in Math from Courant Institute (NYU), where . After this, and before joining MIT,  -->
-
-  <!-- <p> During my PhD, I interned twice at Microsoft Research (once at the Redmond Lab, once at the New York Lab), during which I was fortunate to collaborate with a stellar group of mentors: Scott Yih, Ming-Wei Chang, Kristina Toutanova, Chris Meek, Hanna Wallach, Jenn Wortman Vaughan and Hal Daumé III. </p> -->
-
 </div>
 
 <!-- ========== NEWS ========== -->
@@ -238,7 +197,33 @@ function unhide(divID) {
   <!-- <p> Scroll for older news </p> -->
   <UL style="list-style-type: none; padding: 2px; overflow-y: scroll; height:500px;">
     
-    <li> [05/11/2022]
+    <li> [07/26/2024]
+      
+          Giving a talk at <a href="https://icml-fm-wild.github.io/">ICML 2024 'Foundation Models in the Wild' workshop</a>.          
+      
+    </li>
+    
+    <li> [07/23/2024]
+      
+       Attending ICML 2024 in Vienna. Our group is presenting work on LLMs, Optimal Transport, Model Interpolation and more!
+      
+    </li>
+    
+    <li> [06/26/2024]
+      
+       Joined the Kempner Institute as Affiliate Faculty.
+      
+    </li>
+    
+    <li> [05/01/2024]
+      
+          
+              Paper: <a href="#TAGLLM">Tag-LLM: Repurposing General-Purpose LLMs for Specialized Domains</a> led by MSR Summer Intern Junhong Shen accepted to ICML 2024.
+          
+      
+    </li>
+    
+    <li> [05/11/2023]
       
        Will be serving as AC for ACML 2023.
       
@@ -895,6 +880,110 @@ function unhide(divID) {
     
       
       <div class="tab-pane active" id="papers-selected">
+        
+
+          
+            <span class="anchor" id="TAGLLM"></span>
+            <div class="paper">
+              <p class="title"><b>Tag-LLM: Repurposing General-Purpose LLMs for Specialized Domains</b></p>
+              <p>Junhong Shen, Neil Tenenholtz, James Brian Hall,<b>David Alvarez-Melis</b>, Nicolo Fusi</p>
+              <p><i>ICML'24: International Conference on Machine Learning. 2024.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2024_tagllm/ICML2024_TAGLLM.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/pdf/2402.05140" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="https://www.auai.org/uai2023/posters/236.pdf" target="_blank">poster</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                    
+
+                    
+                      <a class="button" href="javascript:unhide('bib_selected_TAGLLM');">bib</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+                <div id="bib_selected_TAGLLM" class="hidden">
+                  <pre> 
+@InProceedings{pmlr-v235-shen24f,
+  title = 	 {Tag-{LLM}: Repurposing General-Purpose {LLM}s for Specialized Domains},
+  author =       {Shen, Junhong and Tenenholtz, Neil and Hall, James Brian and Alvarez-Melis, David and Fusi, Nicolo},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {44759--44773},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/shen24f/shen24f.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/shen24f.html},
+  abstract = 	 {Large Language Models (LLMs) have demonstrated remarkable proficiency in understanding and generating natural language. However, their capabilities wane in highly specialized domains underrepresented in the pretraining corpus, such as physical and biomedical sciences. This work explores how to repurpose general LLMs into effective task solvers for specialized domains. We introduce a novel, model-agnostic framework for learning custom input tags, which are parameterized as continuous vectors appended to the LLM’s embedding layer, to condition the LLM. We design two types of input tags: domain tags are used to delimit specialized representations (e.g., chemical formulas) and provide domain-relevant context; function tags are used to represent specific functions (e.g., predicting molecular properties) and compress function-solving instructions. We develop a three-stage protocol to learn these tags using auxiliary data and domain knowledge. By explicitly disentangling task domains from task functions, our method enables zero-shot generalization to unseen problems through diverse combinations of the input tags. It also boosts LLM’s performance in various specialized domains, such as predicting protein or chemical properties and modeling drug-target interactions, outperforming expert models tailored to these tasks.}
+} </pre>
+                </div>
+              
+            </div>
+           <!-- paper in category filter -->
         
 
           
@@ -2649,6 +2738,9 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
            <!-- paper in category filter -->
         
 
+           <!-- paper in category filter -->
+        
+
           
             <span class="anchor" id="UBOT"></span>
             <div class="paper">
@@ -2798,6 +2890,110 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
     
       
       <div class="tab-pane" id="papers-ml">
+        
+
+          
+            <span class="anchor" id="TAGLLM"></span>
+            <div class="paper">
+              <p class="title"><b>Tag-LLM: Repurposing General-Purpose LLMs for Specialized Domains</b></p>
+              <p>Junhong Shen, Neil Tenenholtz, James Brian Hall,<b>David Alvarez-Melis</b>, Nicolo Fusi</p>
+              <p><i>ICML'24: International Conference on Machine Learning. 2024.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2024_tagllm/ICML2024_TAGLLM.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/pdf/2402.05140" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="https://www.auai.org/uai2023/posters/236.pdf" target="_blank">poster</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                    
+
+                    
+                      <a class="button" href="javascript:unhide('bib_ml_TAGLLM');">bib</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+                <div id="bib_ml_TAGLLM" class="hidden">
+                  <pre> 
+@InProceedings{pmlr-v235-shen24f,
+  title = 	 {Tag-{LLM}: Repurposing General-Purpose {LLM}s for Specialized Domains},
+  author =       {Shen, Junhong and Tenenholtz, Neil and Hall, James Brian and Alvarez-Melis, David and Fusi, Nicolo},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {44759--44773},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/shen24f/shen24f.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/shen24f.html},
+  abstract = 	 {Large Language Models (LLMs) have demonstrated remarkable proficiency in understanding and generating natural language. However, their capabilities wane in highly specialized domains underrepresented in the pretraining corpus, such as physical and biomedical sciences. This work explores how to repurpose general LLMs into effective task solvers for specialized domains. We introduce a novel, model-agnostic framework for learning custom input tags, which are parameterized as continuous vectors appended to the LLM’s embedding layer, to condition the LLM. We design two types of input tags: domain tags are used to delimit specialized representations (e.g., chemical formulas) and provide domain-relevant context; function tags are used to represent specific functions (e.g., predicting molecular properties) and compress function-solving instructions. We develop a three-stage protocol to learn these tags using auxiliary data and domain knowledge. By explicitly disentangling task domains from task functions, our method enables zero-shot generalization to unseen problems through diverse combinations of the input tags. It also boosts LLM’s performance in various specialized domains, such as predicting protein or chemical properties and modeling drug-target interactions, outperforming expert models tailored to these tasks.}
+} </pre>
+                </div>
+              
+            </div>
+           <!-- paper in category filter -->
         
 
           
@@ -5353,6 +5549,9 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
            <!-- paper in category filter -->
         
 
+           <!-- paper in category filter -->
+        
+
           
             <span class="anchor" id="GANvsXENT"></span>
             <div class="paper">
@@ -6058,6 +6257,9 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
     
       
       <div class="tab-pane" id="papers-ot">
+        
+
+           <!-- paper in category filter -->
         
 
           
@@ -7575,6 +7777,9 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
            <!-- paper in category filter -->
         
 
+           <!-- paper in category filter -->
+        
+
           
             <span class="anchor" id="ShiftDetectOT"></span>
             <div class="paper">
@@ -8293,6 +8498,9 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
            <!-- paper in category filter -->
         
 
+           <!-- paper in category filter -->
+        
+
           
             <span class="anchor" id="PHDTHESIS"></span>
             <div class="paper">
@@ -8518,6 +8726,110 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
     
       
       <div class="tab-pane" id="papers-all">
+        
+
+          
+            <span class="anchor" id="TAGLLM"></span>
+            <div class="paper">
+              <p class="title"><b>Tag-LLM: Repurposing General-Purpose LLMs for Specialized Domains</b></p>
+              <p>Junhong Shen, Neil Tenenholtz, James Brian Hall,<b>David Alvarez-Melis</b>, Nicolo Fusi</p>
+              <p><i>ICML'24: International Conference on Machine Learning. 2024.</i></p>
+
+              <!-- This causes the bug where papers appear repeated when selecting all. TODO why?-->
+              
+
+              <div class="paper-buttons">
+                
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="/assets/publications/2024_tagllm/ICML2024_TAGLLM.pdf" target="_blank">pdf</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      
+
+                    
+                      <a class="button" href="https://arxiv.org/pdf/2402.05140" target="_blank">arxiv</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                      <!-- External URLS -->
+                      
+
+                    
+                      <a class="button" href="https://www.auai.org/uai2023/posters/236.pdf" target="_blank">poster</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                   <!-- paper has attrib filter -->
+                
+                  
+                    
+                        
+                    
+
+                    
+                      <a class="button" href="javascript:unhide('bib_all_TAGLLM');">bib</a>
+                    
+
+                   <!-- paper has attrib filter -->
+                 <!-- over attribs -->
+              </div>
+
+              <!-- Additional hidden containers that should appear after buttons -->
+              
+              
+              
+                <div id="bib_all_TAGLLM" class="hidden">
+                  <pre> 
+@InProceedings{pmlr-v235-shen24f,
+  title = 	 {Tag-{LLM}: Repurposing General-Purpose {LLM}s for Specialized Domains},
+  author =       {Shen, Junhong and Tenenholtz, Neil and Hall, James Brian and Alvarez-Melis, David and Fusi, Nicolo},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {44759--44773},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/shen24f/shen24f.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/shen24f.html},
+  abstract = 	 {Large Language Models (LLMs) have demonstrated remarkable proficiency in understanding and generating natural language. However, their capabilities wane in highly specialized domains underrepresented in the pretraining corpus, such as physical and biomedical sciences. This work explores how to repurpose general LLMs into effective task solvers for specialized domains. We introduce a novel, model-agnostic framework for learning custom input tags, which are parameterized as continuous vectors appended to the LLM’s embedding layer, to condition the LLM. We design two types of input tags: domain tags are used to delimit specialized representations (e.g., chemical formulas) and provide domain-relevant context; function tags are used to represent specific functions (e.g., predicting molecular properties) and compress function-solving instructions. We develop a three-stage protocol to learn these tags using auxiliary data and domain knowledge. By explicitly disentangling task domains from task functions, our method enables zero-shot generalization to unseen problems through diverse combinations of the input tags. It also boosts LLM’s performance in various specialized domains, such as predicting protein or chemical properties and modeling drug-target interactions, outperforming expert models tailored to these tasks.}
+} </pre>
+                </div>
+              
+            </div>
+           <!-- paper in category filter -->
         
 
           
@@ -11377,28 +11689,42 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
      <!-- over categories -->
 </div>
 
-<!-- ========== Advising ========== -->
-<span class="anchor" id="advising"></span>
+<!-- ========== Group ========== -->
+<span class="anchor" id="group"></span>
 <div class="docs-section">
-  <h4>Students, Interns and Advisees</h4>
+  <h4>Research Group and Advisees</h4>
 
+  <h5> Current Group Members </h5>
+    <ul>
+      <li> <a href="https://sunnytqin.github.io/">Tian (Sunny) Qin</a>: PhD student in CS at Harvard. </li>
+      <li> <a href="https://seas.harvard.edu/person/jonathan-geuter">Jonathan Geuter</a>: PhD student in AM at Harvard. </li>
+      <li> <a href="https://seas.harvard.edu/person/sara-kangaslahti">Sara Kangaslahti</a>: PhD student in CS at Harvard. </li>
+      <li> <a href="https://seas.harvard.edu/person/clara-mohri">Clara Mohri</a>: (with Sham Kakade) PhD student in CS at Harvard. </li>
+      <li> <a href="https://www.csail.mit.edu/person/abhi-gupta">Abhi Gupta</a>: (with Tommi Jaakkola) PhD student in OR at MIT. </li>
+    </ul>
+
+  <h5> Former Students, Interns, and Advisees </h5>
   <p>
-    Working with students and junior researchers is undoubtedly the best part of my job. I've been fortunate to advise a number of phenomenal students in the past, including:
+    <!-- Working with students and junior researchers is undoubtedly the best part of my job. I've been fortunate to advise a number of phenomenal students in the past, including: -->
   <ul>
-  <li> <a href="https://www.bunne.ch/">Charlotte Bunne</a>: Master's thesis, ETH. Now a PhD student at ETH.</li>
-  <li> <a href="https://www.linkedin.com/in/annayeaton/">Anna Yeaton</a>: MSR PhD Internship (w/ Rahul Krishnan, Becky Mieloszyk & Grace Huynn). Now a Postdoc at the Broad Institute.</li>
-  <li> <a href="https://haileyjames.github.io/">Hailey James</a>: MIT UROP. Now a PhD student at UCSD.</li>
-  <li> <a href="https://healthyml.org/author/neha-hulkund/">Neha Hulkund</a>: MSR Winter Micro-Internship. Now an M.S. student at MIT CSAIL.</li>
-  <li> <a href="https://chingyaoc.github.io/">Ching-Yao Chuang</a>: MSR PhD Internship. Currently PhD student at MIT CSAIL.</li>
-  <li> <a href="https://sbyebss.github.io/">Jiaojiao Fan</a>: MSR PhD Internship. Currently PhD student at Georgia Tech.</li>
-  <li> <a href="https://pinardemetci.github.io/">Pınar Demetçi</a>: MSR PhD Internship (w/ Alex Lu & Grace Huynn). Currently PhD candidate at Brown.</li>
-  <li> <a href="https://kiakh93.github.io/">Kianoush Falahkheirkhah</a>: MSR PhD Internship (w/ Alex Lu & Grace Huynn). Currently PhD candidate at UIUC.</li>
-  <li> <a href="https://www.linkedin.com/in/alex-derhacobian/">Alex Derhacobian</a>: MSR Undergraduate Internship. Currently Senior at Stanford CS.</li>
-  <li> <a href="https://www.linkedin.com/in/frederike-l%C3%BCbeck-b3a6b4186">Frederike Lübeck</a>: Visiting Masters' Student. Currently MS Student at ETH Zurich.</li>  
+  <li> <a href="https://www.bunne.ch/">Charlotte Bunne</a>: Master's thesis, ETH. Now Assistant Professor at EPFL.</li>
+  <li> <a href="https://chingyaoc.github.io/">Ching-Yao Chuang</a>: MSR PhD Internship. Now researcher at Meta AI.</li>
+  <li> <a href="https://pinardemetci.github.io/">Pınar Demetçi</a>: MSR PhD Internship. Now Postdoc at the Broad Institute.</li>
+  <li> <a href="https://www.linkedin.com/in/alex-derhacobian/">Alex Derhacobian</a>: MSR Undergraduate Internship. Now Senior at Stanford CS.</li>
+  <li> <a href="https://kiakh93.github.io/">Kianoush Falahkheirkhah</a>: MSR PhD Internship. Now PhD candidate at UIUC.</li>
+  <li> <a href="https://sbyebss.github.io/">Jiaojiao Fan</a>: MSR PhD Internship. Now PhD student at Georgia Tech.</li>
+  <li> <a href="https://georgosgeorgos.github.io/">Giorgio Giannone</a>: MSR PhD Internship. Now Applied Scientist at Amazon.</li>
+  <li> <a href="https://healthyml.org/author/neha-hulkund/">Neha Hulkund</a>: MSR Winter Micro-Internship. Now an PhD student at MIT CSAIL.</li>
+  <li> <a href="https://haileyjames.github.io/">Hailey James</a>: MIT UROP. Now PhD student at UCSD.</li>
+  <li> <a href="https://frederike-luebeck.de/">Frederike Lübeck</a>: Visiting Masters' Student. Now PhD Student at ETH Zurich.</li>  
+  <li> <a href="https://mallinar.xyz/">Neil Mallinar</a>: MSR PhD Internship. Now PhD Student at UCSD.</li>
+  <li> <a href="">Alex N. Rojas</a>: Harvard AM/SM thesis.</li>
+  <li> <a href="https://sjunhongshen.github.io/">Junhong Shen</a>: MSR PhD Internship. Now PhD student at CMU.</li>
+  <li> <a href="https://www.linkedin.com/in/annayeaton/">Anna Yeaton</a>: MSR PhD Internship. Now Postdoc at the Broad Institute.</li>
 </ul>
 
   </p>
-
+  
 </div>
 
 
@@ -11408,6 +11734,19 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
   <h4>Teaching</h4>
 
   <p>
+    Current and past courses I have taught or TA'd:
+    <ul>
+    <li> Spring 2024: <a href="https://harvard-ml-courses.github.io/cs181-web/"> CS 181, Machine Learning</a> (Harvard)
+    <li> Spring 2015: <a href="http://courses.csail.mit.edu/6.036/spring_2015/info.html"> 6.036, Intro. to Machine Learning</a> (MIT)
+    <li> Spring 2013: <a href="https://sites.google.com/a/nyu.edu/math-ua-121-calculus-i-spring-13/home/syllabus"> Calculus I (MATH-UA 121) </a> (NYU)
+    <li> Fall 2012: <a href="http://math.nyu.edu/courses/undergrad/MATH-UA009.html"> Algebra and Calculus (MATH-UA 009)</a> (NYU)
+    <li> Fall 2010/Spring 2011: Calculus I (ITAM)
+    <li> Spring 2008/Spring 2009: Economics III (~Intermediate Microeconomics) (ITAM)
+    </ul>
+
+  <p>
+
+    <h5> Teaching Philosophy </h5>
   Explaining <i> is </i> understanding.<br><br>
 
   The following extract is from David Goldstein's <a href="https://books.google.com/books/about/Feynman_s_Lost_Lecture.html?id=ysZI5NcksUcC&hl=en" style="text-decoration: none">book</a> on Feynman: </p>
@@ -11416,15 +11755,7 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
   "Feynman was a truly great teacher. He prided himself on being able to devise ways to explain even the most profound ideas to beginning students. Once, I said to him, "Dick, explain to me, so that I can understand it, why spin one-half particles obey Fermi-Dirac statistics." Sizing up his audience perfectly, Feynman said, "I'll prepare a freshman lecture on it." But he came back a few days later to say, "I couldn't do it. I couldn't reduce it to the freshman level. That means we don't really understand it."
   </blockquote>
 
-  <p>
-  Some current and past courses I have TA'd:
-  <ul>
-  <li> Spring 2015: <a href="http://courses.csail.mit.edu/6.036/spring_2015/info.html"> 6.036, Intro. to Machine Learning</a> (MIT)
-  <li> Spring 2013: <a href="https://sites.google.com/a/nyu.edu/math-ua-121-calculus-i-spring-13/home/syllabus"> Calculus I (MATH-UA 121) </a> (NYU)
-  <li> Fall 2012: <a href="http://math.nyu.edu/courses/undergrad/MATH-UA009.html"> Algebra and Calculus (MATH-UA 009)</a> (NYU)
-  <li> Fall 2010/Spring 2011: Calculus I (ITAM)
-  <li> Spring 2008/Spring 2009: Economics III (~Intermediate Microeconomics) (ITAM)
-  </ul>
+
 
   </p>
 
