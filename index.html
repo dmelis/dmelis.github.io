@@ -160,11 +160,22 @@ function unhide(divID) {
   </p>
 
   <p>
+In my group, <b>we study how data—not just models—shapes the behavior and reliability of AI systems</b>. Our research develops foundational principles and methods for characterizing, transforming, and optimizing datasets to make learning more efficient, interpretable, and adaptive. By treating datasets as structured, dynamic entities rather than static inputs, we aim to build a rigorous science of data for machine learning: a framework that formally connects data properties to model outcomes. In other words, we seek to reivindicate the role of data in AI and ML, recognizing the <b>reality that in this day and age data is often the most scarce, valuable, and manipulable resource in learning systems</b>, yet we still lack a systematic understanding of how to harness it effectively, robustly, and predictably.
+</p><p>
+Our work integrates tools from <a href="https://en.wikipedia.org/wiki/Transportation_theory_(mathematics)" target="_blank">optimal transport</a>, information theory, and generative modeling, and applies them across domains including scientific data, language, and vision.
+
+For example, we have developed methods based on optimal transport to align datasets from different domains, compare complex data distributions, generate synthetic data that preserves key characteristics, and transform datasets to improve model robustness. We have also explored techniques for interpreting black-box models, enhancing their trustworthiness through robust explanations, and incorporating human-centered design principles.
+
+</p><p> 
+If you share these goals, please reach out. We are always looking for collaborators and new group members!
+</p><p>
+
+<!-- 
   My research seeks to make machine learning more <b>broadly applicable</b> (especially to data-poor applications) and <b>trustworthy</b> (e.g., robust and interpretable). I am particularly interested in the implications of these two directions for applications in the natural and medical sciences. My approach to the first of these goals draws on ideas from statistics, optimization, and applied mathematics, especially <a href="https://en.wikipedia.org/wiki/Transportation_theory_(mathematics)" target="_blank">optimal transport</a>, which I have used to develop methods to mitigate data scarcity by various types of geometric dataset manipulations: <a href="#InvarOT">alignment</a>, <a href="#OTDD">comparison</a>, <a href="#GWGAN">generation</a>, and <a href="#OTGF">transformation</a>.
   <a href="https://www.microsoft.com/en-us/research/video/directions-in-ml-automating-dataset-comparison-and-manipulation-with-optimal-transport/">This talk</a> provides a high-level overview of this part of my work.
   As for trustworthy machine learning, I have worked on methods for explaining predictions of <a href="#interpseq">black box models</a>, showed their <a href="#Robust-interpret">lack of robustness</a>, proposed methods to <a href="#SENN">robustify them</a>, and sought inspiration in the social sciences to make them <a href="WOE-HCML">human-centered</a>.
   In the past, I worked on various aspects of learning with highly-structured data such as text or graphs, ranging from <a href="#WE-metric">learning representations</a> of structured objects, to <a href="#DRNN">generating them</a>, to <a href="#interpseq">interpreting models</a> that operate on them.
-  </p><p>
+  </p><p> -->
   <b>Prospective lab members:</b> If you are interested in joining my group at Harvard, please <a href="#joining">read this</a>.   
   </p>
 </div>
@@ -194,6 +205,20 @@ function unhide(divID) {
   <h4>News</h4>
   <!-- <p> Scroll for older news </p> -->
   <UL style="list-style-type: none; padding: 2px; overflow-y: scroll; height:500px;">
+    
+    <li> [12/06/2025]
+      
+          Giving a invited talk at <a href="">UniReps Workshop @ NeurIPS 2025</a>.          
+      
+    </li>
+    
+    <li> [08/25/2025]
+      
+          
+              Paper: <a href="#LLMInterpolation">Continuous Language Model Interpolation for Dynamic and Controllable Text Generation</a> led by Sara Kangaslahti accepted to TMLR.
+          
+      
+    </li>
     
     <li> [08/20/2025]
       
@@ -12996,21 +13021,22 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
 
   <h5> Current Group Members </h5>
     <ul>
+      <li> <a href="https://sarahliaw.github.io">Sarah Liaw</a>: PhD student in CS at Harvard (with Yilun Du). </li>
       <li> <a href="https://rachitbansal.github.io">Rachit Bansal</a>: PhD student in CS at Harvard. </li>
       <li> <a href="https://j-geuter.github.io">Jonathan Geuter</a>: PhD student in AM at Harvard. </li>
-      <li> <a href="https://www.csail.mit.edu/person/abhi-gupta">Abhi Gupta</a>: (with Tommi Jaakkola) PhD student in OR at MIT. </li>
       <li> <a href="https://seas.harvard.edu/person/sara-kangaslahti">Sara Kangaslahti</a>: PhD student in CS at Harvard. </li>
-      <li> <a href="https://nihalnayak.github.io">Nihal Nayak</a>: Postdoc at Harvard. </li>
+      <li> <a href="https://www.csail.mit.edu/person/abhi-gupta">Abhi Gupta</a>: (with Tommi Jaakkola) PhD student in OR at MIT. </li>
       <li> <a href="https://sunnytqin.github.io/">Tian (Sunny) Qin</a>: (with Sham Kakade) PhD student in CS at Harvard. </li>
       <li> <a href="https://paularodrid.wordpress.com">Paula Rodriguez-Diaz</a>: (main advisors: Elizabeth Paulson and Milind Tambe) PhD student in CS at Harvard. </li>
+      <li> <a href="https://nihalnayak.github.io">Nihal Nayak</a>: Postdoc at Harvard. </li>
     </ul>
 
   <h5> Former Students, Interns, and Advisees </h5>
   <p>
     <!-- Working with students and junior researchers is undoubtedly the best part of my job. I've been fortunate to advise a number of phenomenal students in the past, including: -->
   <ul>
-  <li> <a href="">Antara Bhattacharya</a>: Harvard Senior Thesis advisee .</li>
-  <li> <a href="https://www.bunne.ch/">Charlotte Bunne</a>: Master's thesis, ETH. Now Assistant Professor at EPFL.</li>
+  <li> <a href="">Antara Bhattacharya</a>: Harvard Senior Thesis advisee. Now MS student at Cambridge University.</li>
+  <li> <a href="https://www.bunne.ch/">Charlotte Bunne</a>: Master's thesis visiting scholar (at MIT), ETH. Now Assistant Professor at EPFL.</li>
   <li> <a href="https://chingyaoc.github.io/">Ching-Yao Chuang</a>: MSR PhD Internship. Now researcher at Meta AI.</li>
   <li> <a href="https://pinardemetci.github.io/">Pınar Demetçi</a>: MSR PhD Internship. Now Postdoc at the Broad Institute.</li>
   <li> <a href="https://www.linkedin.com/in/alex-derhacobian/">Alex Derhacobian</a>: MSR Undergraduate Internship. Now Senior at Stanford CS.</li>
