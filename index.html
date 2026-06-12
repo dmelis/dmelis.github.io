@@ -21,7 +21,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href=/libs/external/skeleton/normalize.css>
   <link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
-  <link rel="stylesheet" href=/libs/custom/my_css.css>
 
   <!-- JQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -44,6 +43,9 @@
   <!-- Timeline
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href=/libs/external/timeline.css>
+
+  <!-- Custom CSS (loaded last so its rules win over Skeleton + skeleton-tabs) -->
+  <link rel="stylesheet" href=/libs/custom/my_css.css>
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -69,8 +71,33 @@
 
   
 
+  <!-- Theme init (must run before body renders to avoid FOUC) -->
+  <script>
+    (function() {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
 </head>
 <body>
+
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <i class="fa fa-moon-o" aria-hidden="true"></i>
+    <i class="fa fa-sun-o" aria-hidden="true"></i>
+  </button>
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', function() {
+      var root = document.documentElement;
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  </script>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -13115,7 +13142,7 @@ url = {http://papers.nips.cc/paper/8003-towards-robust-interpretability-with-sel
     Past, current, and upcoming courses:
     <ul>
     <li> Spring 2026: <a href="https://harvard-ml-courses.github.io/cs181-web/"> CS 1810, Machine Learning</a> (Harvard)
-    <li> Fall 2025: <a href="https://canvas.harvard.edu/courses/154337"> CS 2840, Optimal Transport for Machine Learning</a> (Harvard)
+    <li> Fall 2025: <a href="/courses/cs2840/"> CS 2840, Optimal Transport for Machine Learning</a> (Harvard)
     <li> Spring 2025: <a href="https://harvard-ml-courses.github.io/cs181-web/"> CS 1810, Machine Learning</a> (Harvard)
     <li> Spring 2024: <a href="https://harvard-ml-courses.github.io/cs181-web/"> CS 181, Machine Learning</a> (Harvard)
     <li> Spring 2015: <a href="http://courses.csail.mit.edu/6.036/spring_2015/info.html"> 6.036, Intro. to Machine Learning</a> (TA; MIT)

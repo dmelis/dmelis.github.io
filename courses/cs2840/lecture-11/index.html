@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>David Alvarez-Melis | OT as a Loss Function</title>
+  <meta name="description" content="Homepage of David Alvarez-Melis">
+  <meta name="author" content="David Alvarez-Melis">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/skeleton/normalize.css>
+  <link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
+
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src=/libs/external/jquery-3.1.1.min.js></script>
+
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
+
+  <!-- Academic-Icons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/academicons-1.8.6/css/academicons.min.css>
+
+
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/skeleton_tabs/skeleton-tabs.css>
+  <script src=/libs/external/skeleton_tabs/skeleton-tabs.js></script>
+
+  <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/timeline.css>
+
+  <!-- Custom CSS (loaded last so its rules win over Skeleton + skeleton-tabs) -->
+  <link rel="stylesheet" href=/libs/custom/my_css.css>
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="stylesheet" href=/libs/external/github-prettify-theme.css>-->
+  <script src=/libs/custom/my_js.js></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href=/libs/icon.png>
+  <link rel="shortcut icon" type="image/png" href=/libs/icon.png>
+
+  <!-- Google Analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7YM94T4RDX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7YM94T4RDX');
+</script>
+
+  
+
+  <!-- Theme init (must run before body renders to avoid FOUC) -->
+  <script>
+    (function() {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+</head>
+<body>
+
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <i class="fa fa-moon-o" aria-hidden="true"></i>
+    <i class="fa fa-sun-o" aria-hidden="true"></i>
+  </button>
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', function() {
+      var root = document.documentElement;
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  </script>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="/"><img title="Photo by: Eliza Grinell" class="u-max-full-width" src='/assets/profile-pics/Profile_pic_2021_Sq.jpg'></a>
+        </div>
+        <div class="nine columns main-description">
+            <h1>David Alvarez-Melis</h1>
+            <p>(he/him/his)</p>
+            <p>Assistant Professor, Harvard University (SEAS)</p>
+            <p>150 Western Av. Room 2-332, Allston MA 02134</p>
+            <p>[three initials]@seas.harvard.edu</p>
+            <p>
+              <span onclick="window.open('https://twitter.com/elmelis')" style="cursor: pointer">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://www.linkedin.com/in/davidalvarezmelis')" style="cursor: pointer">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://github.com/dmelis')" style="cursor: pointer">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://scholar.google.com/citations?user=XsxZrYYAAAAJ&hl=en')" style="cursor: pointer">
+                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://www.semanticscholar.org/author/David-Alvarez-Melis/1390096054')" style="cursor: pointer">
+                <i class="ai ai-semantic-scholar ai-lg" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://dblp.uni-trier.de/pers/hd/a/Alvarez=Melis:David')" style="cursor: pointer">
+                <i class="ai ai-dblp ai-lg" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://orcid.org/0000-0002-9591-8986')" style="cursor: pointer">
+                <i class="ai ai-orcid ai-lg" aria-hidden="true"></i>
+              </span>
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#about>About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#news>News</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Publications</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#group>Group</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#projects>Projects</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#teaching>Teaching</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#resume>Vita</a></li>
+          <!-- <li class="navbar-item"><a class="navbar-link" href=/index.html#misc>Misc</a></li> -->
+          <!-- <li class="navbar-item"><a class="navbar-link" href=/index.html#meta>Meta</a></li> -->
+        </ul>
+      </div>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+<div class="docs-section">
+  <p><a href="/courses/cs2840/">&larr; CS2840</a></p>
+  <h3>Lecture 11: OT as a Loss Function</h3>
+  <h5>October 7, 2025</h5>
+
+  
+    <iframe src="/assets/courses/cs2840/lecture-11/index.html"
+            width="100%" height="600" style="border:1px solid #ddd;" allowfullscreen></iframe>
+    <p><a href="/assets/courses/cs2840/lecture-11/index.html" target="_blank">Open in new tab</a></p>
+  
+
+  
+  
+
+  <hr>
+  <div class="row">
+    <div class="six columns"><a href="/courses/cs2840/lecture-10/">&larr; Lecture 10</a></div>
+    <div class="six columns" style="text-align:right;"><a href="/courses/cs2840/lecture-12/">Lecture 12 &rarr;</a></div>
+  </div>
+</div>
+
+
+    <div class="footer">
+      <div class="row">
+        <div class="four columns">
+          David Alvarez-Melis
+        </div>
+        <div class="four columns">  &nbsp;&nbsp; </div>
+        <!-- <div class="four columns">
+          [three initials]@seas.harvard.edu
+        </div> -->
+        <div class="four columns">
+          <span onclick="window.open('https://twitter.com/elmelis')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://www.linkedin.com/in/davidalvarezmelis')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://github.com/dmelis')" style="cursor: pointer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

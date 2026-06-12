@@ -1,3 +1,100 @@
+/* ============ Theme variables ============ */
+:root {
+  --bg: #ffffff;
+  --text: #222;
+  --text-muted: rgba(0,0,0,0.55);
+  --border: #eee;
+  --card-bg: #ffffff;
+  --code-bg: #ffffff;
+  --code-text: #110000;
+  --link: #1EAEDB;
+  --link-hover: #0FA0CE;
+  --accent: #33C3F0;
+  --image-border: rgba(0,0,0,0.2);
+  --shadow: rgba(0,0,0,0.1);
+}
+[data-theme="dark"] {
+  --bg: #15171c;
+  --text: #d7dadd;
+  --text-muted: rgba(255,255,255,0.55);
+  --border: #2a2d34;
+  --card-bg: #1c1f26;
+  --code-bg: #1c1f26;
+  --code-text: #e8e8e8;
+  --link: #5cc8ff;
+  --link-hover: #8ad8ff;
+  --accent: #5cc8ff;
+  --image-border: rgba(255,255,255,0.15);
+  --shadow: rgba(0,0,0,0.6);
+}
+html, body { background: var(--bg); color: var(--text); }
+a { color: var(--link); }
+a:hover { color: var(--link-hover); }
+h1, h2, h3, h4, h5, h6 { color: var(--text); }
+th, td { border-bottom-color: var(--border) !important; }
+hr { border-top-color: var(--border); }
+html, body, .docs-section, .navbar, .navbar-spacer, .footer, .popover, .theme-toggle {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* ============ Theme toggle button ============ */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background: var(--card-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 2.6rem;
+  height: 2.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  padding: 0;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+.theme-toggle:hover { transform: scale(1.08); }
+.theme-toggle .fa-sun-o { display: none; }
+[data-theme="dark"] .theme-toggle .fa-moon-o { display: none; }
+[data-theme="dark"] .theme-toggle .fa-sun-o { display: inline-block; }
+
+/* ============ Theme-aware Skeleton buttons & tabs ============ */
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+  color: var(--text);
+  border-color: var(--border);
+}
+.button:hover, .button:focus, button:hover, button:focus,
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover,
+input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+ul.tab-nav { border-bottom-color: var(--border); }
+ul.tab-nav li .button { color: var(--text); }
+ul.tab-nav li .active.button {
+  color: var(--text);
+  border-bottom-color: var(--bg);
+}
+[data-theme="dark"] ul.tab-nav li .active.button {
+  color: #fff;
+}
+
+/* ============ Theme-aware Vitae timeline tags ============ */
+:root { --tag-bg: rgb(248,248,248); }
+[data-theme="dark"] { --tag-bg: #2a2d34; }
+
+.flag { background: var(--tag-bg); }
+.time { background: var(--tag-bg); }
+.direction-l .flag:after { border-left-color: var(--tag-bg); }
+.direction-r .flag:after { border-right-color: var(--tag-bg); }
+/* Inside of the timeline dot should match page background, not stay white */
+.direction-l .flag:before,
+.direction-r .flag:before { background: var(--bg); }
+
 h4 {
   letter-spacing: .1rem; }
 .button {
@@ -48,13 +145,13 @@ h4 {
   letter-spacing: .2rem;
   font-weight: 600; }
 .docs-section {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border);
   padding: 4rem 0;
   margin-bottom: 0;}
 .footer {
   text-align: center;
-  color: rgba(0, 0, 0, 0.4);
-  border-top: 1px solid #eee;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
   padding: 15px 0 40px 0;
   margin-bottom: 0;}
 .navbar {
@@ -63,7 +160,7 @@ h4 {
 .title-subtitle h3 {
   margin-bottom: 0px; }
 .title-subtitle h5 {
-  color: rgba(0, 0, 0, 0.60); }
+  color: var(--text-muted); }
 .image {
   text-align: center; }
 
@@ -72,7 +169,7 @@ h4 {
   margin-bottom: 30px;
 }
 .project-image-container {
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid var(--image-border);
   padding: 3px;
   transition: 0.3s;
 }
@@ -102,10 +199,10 @@ h4 {
     display: block;
     width: 100%;
     height: 6.5rem;
-    background: #fff;
+    background: var(--bg);
     z-index: 99;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee; }
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border); }
   .navbar-spacer {
     display: none; }
   .navbar > .container {
@@ -125,9 +222,9 @@ h4 {
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
-    color: #222; }
+    color: var(--text); }
   .navbar-link.active {
-    color: #33C3F0; }
+    color: var(--accent); }
   .has-docked-nav .navbar {
     position: fixed;
     top: 0;
@@ -147,8 +244,8 @@ h4 {
     position: absolute;
     top: 0;
     left: 0;
-    background: #fff;
-    border: 1px solid #eee;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
     border-radius: 4px;
     top: 92%;
     left: -50%;
@@ -184,10 +281,10 @@ h4 {
     margin: 0; }
   .popover-link {
     position: relative;
-    color: #222;
+    color: var(--text);
     display: block;
     padding: 8px 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.0rem;
@@ -201,15 +298,15 @@ h4 {
     border-bottom-width: 0; }
   .popover-link:hover {
     color: #fff;
-    background: #33C3F0; }
+    background: var(--accent); }
   .popover-link:hover,
   .popover-item:first-child .popover-link:hover:after {
-    border-bottom-color: #33C3F0; }
+    border-bottom-color: var(--accent); }
 }
 
 pre {
-  background-color: white;
-  color: #110000;
+  background-color: var(--code-bg);
+  color: var(--code-text);
   border: 3;
   font-size:0.75em;
   line-height:1.2em;
