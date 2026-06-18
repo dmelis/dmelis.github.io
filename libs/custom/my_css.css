@@ -95,6 +95,27 @@ ul.tab-nav li .active.button {
 .direction-l .flag:before,
 .direction-r .flag:before { background: var(--bg); }
 
+.lecture-frame { position: relative; line-height: 0; }
+.lecture-frame iframe { display: block; }
+.lecture-watermark {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.45);
+  background: rgba(255, 255, 255, 0.65);
+  padding: 2px 6px;
+  border-radius: 3px;
+  pointer-events: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  letter-spacing: 0.02em;
+}
+[data-theme="dark"] .lecture-watermark {
+  color: rgba(215, 218, 221, 0.55);
+  background: rgba(21, 23, 28, 0.65);
+}
+
 h4 {
   letter-spacing: .1rem; }
 .button {
