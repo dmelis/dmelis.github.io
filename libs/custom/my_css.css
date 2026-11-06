@@ -1,36 +1,38 @@
 /* ============ Theme variables ============ */
 :root {
-  --bg: #ffffff;
-  --text: #222;
+  --bg: #FAF7F2;            /* warm paper white */
+  --text: #3D251F;          /* palette dark brown: warm body text */
+  --heading: #222;
   --text-muted: rgba(0,0,0,0.55);
-  --border: #eee;
-  --card-bg: #ffffff;
-  --code-bg: #ffffff;
+  --border: #ECE5DA;
+  --card-bg: #FFFDF9;
+  --code-bg: #F4EFE7;
   --code-text: #110000;
-  --link: #1EAEDB;
-  --link-hover: #0FA0CE;
-  --accent: #33C3F0;
+  --link: #2B7F91;        /* palette teal, darkened for text contrast */
+  --link-hover: #1F6574;
+  --accent: #3DA2B7;
   --image-border: rgba(0,0,0,0.2);
   --shadow: rgba(0,0,0,0.1);
 }
 [data-theme="dark"] {
   --bg: #15171c;
   --text: #d7dadd;
+  --heading: #d7dadd;
   --text-muted: rgba(255,255,255,0.55);
   --border: #2a2d34;
   --card-bg: #1c1f26;
   --code-bg: #1c1f26;
   --code-text: #e8e8e8;
-  --link: #5cc8ff;
-  --link-hover: #8ad8ff;
-  --accent: #5cc8ff;
+  --link: #6CC3D5;
+  --link-hover: #9AD7E4;
+  --accent: #5DBDD0;
   --image-border: rgba(255,255,255,0.15);
   --shadow: rgba(0,0,0,0.6);
 }
 html, body { background: var(--bg); color: var(--text); }
 a { color: var(--link); }
 a:hover { color: var(--link-hover); }
-h1, h2, h3, h4, h5, h6 { color: var(--text); }
+h1, h2, h3, h4, h5, h6 { color: var(--heading); }
 th, td { border-bottom-color: var(--border) !important; }
 hr { border-top-color: var(--border); }
 html, body, .docs-section, .navbar, .navbar-spacer, .footer, .popover, .theme-toggle {
@@ -84,7 +86,7 @@ ul.tab-nav li .active.button {
 }
 
 /* ============ Theme-aware Vitae timeline tags ============ */
-:root { --tag-bg: rgb(248,248,248); }
+:root { --tag-bg: #F1EBE1; }
 [data-theme="dark"] { --tag-bg: #2a2d34; }
 
 .flag { background: var(--tag-bg); }
@@ -285,7 +287,7 @@ h4 {
     pointer-events: none; }
   .popover-item:first-child .popover-link:after {
     border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #fff;
+    border-bottom-color: var(--card-bg);
     border-width: 10px;
     margin-left: -10px; }
   .popover-item:first-child .popover-link:before {
@@ -373,58 +375,82 @@ figure.side-by-side figcaption {
 }
 
 
-/* figure {
-  display: table;
-}
-.right {
-    display: table;
-    /* position: relative; */
-    float: right;
-    /* width: 300px;
-    height: 300px;
-    margin: 25px 12px;
-    border-radius: 6px;
-}
-figure.right figcaption {
-  vertical-align: middle;
-  display: table-cell;
-  font-size: 10pt;
-    /* display: table-caption;
-    text-align: center;
-    /* border-radius: inherit;
-    background-color: #D66360;
-    opacity: 0;
-    transform: translateY(30%);
-    transition: all 0.6s ease 0s;
-}
-*/
 
-
-
-/*
-  --------------         SANSBOX
-  */
-
-/* .left figcaption {
-  text-align: center;
-  /* font-family:sans-serif;
-  font-weight:bold;
-  font-size:16px;
-  padding:10px;
-  display: table-cell;
-  vertical-align:middle;
-} */
-
-/* figure.right {
-   display:table;
+/* ============ Paper link buttons, grouped by kind (palette: My Design Principles) ============ */
+:root {
+  --pal-brown: #3D251F; --pal-teal: #3DA2B7; --pal-coral: #ED6758;
+  --pal-gold: #FEC44C;  --pal-tan: #D9B37E;  --pal-rust: #AA664A;
+  --pbtn-text: var(--pal-brown);
+  --pbtn-tint: 14%;
 }
-figure figcaption.right {
-   display:table-cell;
-   vertical-align:middle;
-   width=10%;
-   font-size: 10pt;
+[data-theme="dark"] { --pbtn-text: #ece4dc; --pbtn-tint: 24%; }
+.paper .button.pbtn {
+  --c: var(--pal-tan);
+  color: var(--pbtn-text);
+  border: 1px solid var(--c);
+  background: color-mix(in srgb, var(--c) var(--pbtn-tint), transparent);
+  border-radius: 4px;
+  transition: background-color .15s ease, color .15s ease;
 }
-figure img {
-   display:table-cell;
-   width=50%;
-} */
+.paper .button.pbtn:hover, .paper .button.pbtn:focus {
+  color: #fff;
+  background: var(--c);
+  border-color: var(--c);
+}
+.pbtn-pdf, .pbtn-arxiv, .pbtn-openreview, .pbtn-doi, .pbtn-supplement { --c: var(--pal-teal) !important; }
+.pbtn-code, .pbtn-dataset                                           { --c: var(--pal-coral) !important; }
+.pbtn-talk, .pbtn-slides, .pbtn-poster                              { --c: var(--pal-gold) !important; }
+.pbtn-project, .pbtn-website, .pbtn-blog, .pbtn-press               { --c: var(--pal-rust) !important; }
+.pbtn-bib                                                           { --c: var(--pal-tan) !important; }
+/* Gold and tan are too light for white text: keep dark text on hover */
+.pbtn-talk:hover, .pbtn-slides:hover, .pbtn-poster:hover, .pbtn-bib:hover,
+.pbtn-talk:focus, .pbtn-slides:focus, .pbtn-poster:focus, .pbtn-bib:focus { color: var(--pal-brown) !important; }
+
+.pub-legend { font-size: 1.3rem; color: var(--text-muted); }
+.pub-legend sup { font-size: 1.3rem; vertical-align: 0.3em; }
+.paper sup { font-size: 70%; }
+
+/* ============ News ============ */
+.news-list { list-style-type: none; padding: 2px; margin-bottom: 1rem; }
+.news-toggle {
+  border: 1px solid var(--accent);
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  height: 30px; line-height: 28px; padding: 0 14px;
+  text-transform: none; letter-spacing: 0; font-weight: 400;
+}
+.news-toggle:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* News type tags: same color meaning as the paper buttons */
+.news-tag {
+  --c: var(--pal-rust);
+  display: inline-block; min-width: 5.2em; text-align: center;
+  font-size: 1.1rem; line-height: 1.6; letter-spacing: .05rem; text-transform: uppercase;
+  padding: 0 .5em; margin-right: .4em; border-radius: 3px; vertical-align: 1px;
+  color: var(--pbtn-text);
+  border: 1px solid var(--c);
+  background: color-mix(in srgb, var(--c) var(--pbtn-tint), transparent);
+}
+.news-tag-paper    { --c: var(--pal-teal); }
+.news-tag-preprint { --c: var(--pal-coral); }
+.news-tag-talk     { --c: var(--pal-gold); }
+
+/* Oral / Spotlight / award highlights in publication entries */
+.paper p strong {
+  display: inline-block;
+  font-size: 1.1rem; font-style: normal; font-weight: 600; line-height: 1.6;
+  letter-spacing: .04rem; text-transform: uppercase;
+  padding: 0 .55em; margin-left: .2em; border-radius: 999px;
+  color: #fff; background: var(--pal-coral);
+}
+
+/* Active publication tab: teal top rule */
+ul.tab-nav li .active.button { box-shadow: inset 0 2px 0 var(--accent); }
+
+/* Vitae timeline: academic (right) in teal, industry (left) in rust */
+.direction-r .flag:before { border-color: var(--pal-teal); }
+.direction-l .flag:before { border-color: var(--pal-rust); }
+.direction-r .time-wrapper { color: var(--pal-teal); }
+.direction-l .time-wrapper { color: var(--pal-rust); }
+[data-theme="dark"] .direction-r .time-wrapper { color: #6CC3D5; }
+[data-theme="dark"] .direction-l .time-wrapper { color: #D08E6F; }
